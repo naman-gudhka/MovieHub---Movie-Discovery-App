@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieHub | Discover your next favorite film</title>
+    <meta
+      name="description"
+      content="MovieHub helps you discover new films, explore trending picks, and build your perfect watchlist."
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="#home" aria-label="MovieHub home">
+          <span class="brand-mark">M</span>
+          <span>MovieHub</span>
+        </a>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-label="Toggle light and dark mode">
+            <span class="toggle-icon" aria-hidden="true">☀︎</span>
+            <span class="toggle-label">Theme</span>
+          </button>
+
+          <button class="menu-toggle" type="button" aria-label="Open navigation menu">
+            &#9776;
+          </button>
+
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#home">Home</a>
+            <a href="#trending">Trending</a>
+            <a href="#watchlist">Watchlist</a>
+            <a href="#favorites">Favorites</a>
+            <a href="#about">About</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <!-- Hero Section -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Tonight's spotlight</p>
+            <h1 id="hero-title">Find stories that feel larger than life.</h1>
+            <p>
+              Browse cinematic highlights, track your favorites, and discover
+              fresh picks in one elegant streaming-inspired space.
+            </p>
+
+            <form class="search-box" role="search" id="movie-search-form">
+              <label class="visually-hidden" for="movie-search">Search movies</label>
+              <input id="movie-search" type="search" placeholder="Search movies..." />
+              <button type="submit">Search</button>
+            </form>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#browse-movies">Discover Movies</a>
+              <a class="btn btn-secondary" href="#trending">View trending</a>
+            </div>
+          </div>
+
+          <article class="hero-card" aria-label="Featured movie preview">
+            <img src="assets/images/movie-placeholder.svg" alt="Poster artwork for the fictional film Nova Horizon" />
+            <div class="hero-card-info">
+              <p class="pill">Featured film</p>
+              <h2>Nova Horizon</h2>
+              <p>
+                A daring crew races across the edge of a glowing nebula to save
+                a lost signal from the stars.
+              </p>
+              <ul class="meta-list">
+                <li>Science Fiction</li>
+                <li>2026</li>
+                <li>4.8/5</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Browse Movies Section -->
+      <section class="movies-section" id="browse-movies">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Browse Movies</h2>
+            <p>Handpicked stories for every kind of movie night.</p>
+          </div>
+
+          <div class="movie-grid" id="movie-grid">
+            <article class="movie-card" data-section="browse">
+              <img src="assets/images/movie-placeholder.svg" alt="Poster for the fictional film Midnight Harbor" />
+              <div class="card-body">
+                <div class="card-top">
+                  <span class="card-badge">Popular</span>
+                  <span class="card-rating">4.7</span>
+                </div>
+                <div class="card-description">
+                  <h3>Midnight Harbor</h3>
+                  <p>A moody mystery about a town that forgets its own history.</p>
+                </div>
+                <div class="card-meta">
+                  <span>Thriller</span>
+                  <span>2025</span>
+                </div>
+                <div class="card-actions">
+                  <button class="card-action" type="button" aria-label="Like Midnight Harbor">♡</button>
+                  <button class="card-action" type="button" aria-label="Add Midnight Harbor to watchlist">+</button>
+                  <button class="card-action card-action--detail" type="button">View Details</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="movie-card" data-section="browse">
+              <img src="assets/images/movie-placeholder.svg" alt="Poster for the fictional film Golden Echo" />
+              <div class="card-body">
+                <div class="card-top">
+                  <span class="card-badge">Trending</span>
+                  <span class="card-rating">4.5</span>
+                </div>
+                <div class="card-description">
+                  <h3>Golden Echo</h3>
+                  <p>A heartfelt drama about music, memory, and second chances.</p>
+                </div>
+                <div class="card-meta">
+                  <span>Drama</span>
+                  <span>2024</span>
+                </div>
+                <div class="card-actions">
+                  <button class="card-action" type="button" aria-label="Like Golden Echo">♡</button>
+                  <button class="card-action" type="button" aria-label="Add Golden Echo to watchlist">+</button>
+                  <button class="card-action card-action--detail" type="button">View Details</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="movie-card" data-section="browse">
+              <img src="assets/images/movie-placeholder.svg" alt="Poster for the fictional film Ember City" />
+              <div class="card-body">
+                <div class="card-top">
+                  <span class="card-badge">#1</span>
+                  <span class="card-rating">4.9</span>
+                </div>
+                <div class="card-description">
+                  <h3>Ember City</h3>
+                  <p>An electric adventure following a street racer and a hidden map.</p>
+                </div>
+                <div class="card-meta">
+                  <span>Adventure</span>
+                  <span>2026</span>
+                </div>
+                <div class="card-actions">
+                  <button class="card-action" type="button" aria-label="Like Ember City">♡</button>
+                  <button class="card-action" type="button" aria-label="Add Ember City to watchlist">+</button>
+                  <button class="card-action card-action--detail" type="button">View Details</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="movie-card" data-section="browse">
+              <img src="assets/images/movie-placeholder.svg" alt="Poster for the fictional film Lantern Vale" />
+              <div class="card-body">
+                <div class="card-top">
+                  <span class="card-badge">Popular</span>
+                  <span class="card-rating">4.3</span>
+                </div>
+                <div class="card-description">
+                  <h3>Lantern Vale</h3>
+                  <p>A warm fantasy about lantern keepers and a forgotten light.</p>
+                </div>
+                <div class="card-meta">
+                  <span>Fantasy</span>
+                  <span>2023</span>
+                </div>
+                <div class="card-actions">
+                  <button class="card-action" type="button" aria-label="Like Lantern Vale">♡</button>
+                  <button class="card-action" type="button" aria-label="Add Lantern Vale to watchlist">+</button>
+                  <button class="card-action card-action--detail" type="button">View Details</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+            <div class="section-actions">
+              <button class="btn btn-secondary view-more-btn" type="button" id="view-more-btn">View More</button>
+            </div>
+        </div>
+      </section>
+
+      <!-- Trending Movies Section -->
+      <section class="trending-section" id="trending">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Trending Movies</h2>
+            <p>Freshly loved picks with a strong pulse across the community.</p>
+          </div>
+
+          <div class="movie-grid movie-grid--compact">
+            <article class="movie-card" data-section="trending">
+              <img src="assets/images/movie-placeholder.svg" alt="Poster for the fictional film Velvet Circuit" />
+              <div class="card-body">
+                <div class="card-top">
+                  <span class="card-badge">Trending</span>
+                  <span class="card-rating">4.8</span>
+                </div>
+                <div class="card-description">
+                  <h3>Velvet Circuit</h3>
+                  <p>An elegant cyber-thriller about a musician hunting a hidden code.</p>
+                </div>
+                <div class="card-meta">
+                  <span>Cyber</span>
+                  <span>2026</span>
+                </div>
+                <div class="card-actions">
+                  <button class="card-action" type="button" aria-label="Like Velvet Circuit">♡</button>
+                  <button class="card-action" type="button" aria-label="Add Velvet Circuit to watchlist">+</button>
+                  <button class="card-action card-action--detail" type="button">View Details</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="movie-card" data-section="trending">
+              <img src="assets/images/movie-placeholder.svg" alt="Poster for the fictional film Shadow Orchard" />
+              <div class="card-body">
+                <div class="card-top">
+                  <span class="card-badge">#1</span>
+                  <span class="card-rating">4.6</span>
+                </div>
+                <div class="card-description">
+                  <h3>Shadow Orchard</h3>
+                  <p>A haunting tale of family secrets buried beneath an orchard.</p>
+                </div>
+                <div class="card-meta">
+                  <span>Horror</span>
+                  <span>2025</span>
+                </div>
+                <div class="card-actions">
+                  <button class="card-action" type="button" aria-label="Like Shadow Orchard">♡</button>
+                  <button class="card-action" type="button" aria-label="Add Shadow Orchard to watchlist">+</button>
+                  <button class="card-action card-action--detail" type="button">View Details</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="movie-card" data-section="trending">
+              <img src="assets/images/movie-placeholder.svg" alt="Poster for the fictional film Northbound" />
+              <div class="card-body">
+                <div class="card-top">
+                  <span class="card-badge">Popular</span>
+                  <span class="card-rating">4.4</span>
+                </div>
+                <div class="card-description">
+                  <h3>Northbound</h3>
+                  <p>A road trip drama that turns every mile into a memory.</p>
+                </div>
+                <div class="card-meta">
+                  <span>Drama</span>
+                  <span>2024</span>
+                </div>
+                <div class="card-actions">
+                  <button class="card-action" type="button" aria-label="Like Northbound">♡</button>
+                  <button class="card-action" type="button" aria-label="Add Northbound to watchlist">+</button>
+                  <button class="card-action card-action--detail" type="button">View Details</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="movie-card" data-section="trending">
+              <img src="assets/images/movie-placeholder.svg" alt="Poster for the fictional film Brightline" />
+              <div class="card-body">
+                <div class="card-top">
+                  <span class="card-badge">Trending</span>
+                  <span class="card-rating">4.2</span>
+                </div>
+                <div class="card-description">
+                  <h3>Brightline</h3>
+                  <p>A quiet coming-of-age story about family, fate, and first flights.</p>
+                </div>
+                <div class="card-meta">
+                  <span>Coming-of-age</span>
+                  <span>2026</span>
+                </div>
+                <div class="card-actions">
+                  <button class="card-action" type="button" aria-label="Like Brightline">♡</button>
+                  <button class="card-action" type="button" aria-label="Add Brightline to watchlist">+</button>
+                  <button class="card-action card-action--detail" type="button">View Details</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="about">
+      <div class="container footer-content">
+        <p>© 2026 MovieHub. Built for curious viewers.</p>
+        <a href="#home">Back to top</a>
+      </div>
+    </footer>
+  </body>
+</html>
