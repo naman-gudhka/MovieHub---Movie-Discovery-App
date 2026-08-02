@@ -30,8 +30,8 @@ html {
 body {
   margin: 0;
   font-family: var(--font-body);
-  background: linear-gradient(135deg, var(--bg), #0f1424 65%, #111726);
   color: var(--text);
+  background-color: #06070b;
   line-height: 1.6;
 }
 
@@ -180,8 +180,8 @@ button {
   inset: 0;
   background:
     linear-gradient(90deg, rgba(6, 7, 11, 0.92) 0%, rgba(6, 7, 11, 0.7) 45%, rgba(6, 7, 11, 0.9) 100%),
-    url("../images/movie-placeholder.svg") center/cover no-repeat;
-  filter: blur(6px);
+    url("../images/dark-red-curtain-hd-background-wallpaper-11635959760qrb4yp7bnw.jpg") center/cover no-repeat;
+  filter: blur(4px);
   transform: scale(1.05);
   z-index: 0;
 }
@@ -355,7 +355,7 @@ button {
 
 .movies-section,
 .trending-section {
-  padding: 0 0 var(--space-5);
+  padding: var(--space-2) 0 var(--space-5);
 }
 
 .card-actions {
@@ -481,7 +481,7 @@ button {
 
 /* --- Footer --- */
 .site-footer {
-  padding: var(--space-4) 0 var(--space-5);
+  padding: var(--space-2) 0 var(--space-2);
   border-top: 1px solid var(--border);
 }
 
