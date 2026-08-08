@@ -1,0 +1,56 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  background: rgba(6, 7, 11, 0.8);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4.5rem;
+  gap: var(--space-2);
+}
+
+.hero {
+  padding: var(--space-5) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  gap: var(--space-4);
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+#browse-movies{
+  margin-top: var(--space-2);
+}
+
+.movies-section,
+.trending-section {
+  padding: var(--space-2) 0 var(--space-5);
+}
+
+.movie-grid {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.site-footer {
+  padding: var(--space-2) 0 var(--space-2);
+  border-top: 1px solid var(--border);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  color: var(--muted);
+}
