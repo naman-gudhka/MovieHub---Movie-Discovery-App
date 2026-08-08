@@ -13,4 +13,4 @@
   7.VS Code & Live server for development
 
 # Current Status:
-  Planning & project initialisation
+  refactor: split stylesheet into modules.
