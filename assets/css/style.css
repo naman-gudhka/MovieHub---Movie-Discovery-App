@@ -46,6 +46,17 @@ img {
   object-fit: cover;
 }
 
+.image-container{
+  position: relative;
+}
+
+.image-overlay{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
 button,
 input {
   font: inherit;
@@ -161,11 +172,16 @@ button {
   color: var(--muted);
   font-size: 0.95rem;
   transition: color 180ms ease;
+  padding: var(--space-1);
+  border-bottom: 1px solid transparent;
+  transition: color 180ms ease,
+              border-color 0.4s ease-in-out;
 }
 
 .site-nav a:hover,
 .site-nav a:focus-visible {
   color: var(--text);
+  border-bottom-color: white;
 }
 
 /* --- Hero Section --- */
