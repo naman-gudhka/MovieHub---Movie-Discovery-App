@@ -19,6 +19,18 @@
   --font-body: "Segoe UI", Roboto, Arial, sans-serif;
 }
 
+.light {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --surface-2: #e9edf5;
+  --text: #171a24;
+  --muted: #5f687a;
+  --accent: #6b4eff;
+  --accent-2: #159f91;
+  --border: rgba(23, 26, 36, 0.12);
+  --shadow: 0 20px 45px rgba(23, 26, 36, 0.12);
+}
+
 * {
   box-sizing: border-box;
 }

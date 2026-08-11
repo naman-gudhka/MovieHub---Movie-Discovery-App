@@ -59,7 +59,7 @@
 .menu-toggle span + span {
   margin-top: 0.24rem;
 }
-
+  
 .site-nav {
   display: none;
   gap: 0.9rem;
@@ -375,4 +375,82 @@
   top: 20px;
   left: 20px;
   z-index: 2;
+}
+
+/* =========================
+   Light Theme - Components
+   ========================= 
+*/
+
+.light .theme-toggle,
+.light .menu-toggle {
+  background: rgba(23, 26, 36, 0.04);
+}
+
+.light .site-nav a:hover,
+.light .site-nav a:focus-visible {
+  border-bottom-color: var(--text);
+}
+
+.light .hero-backdrop {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(245, 247, 251, 0.92) 0%,
+      rgba(245, 247, 251, 0.72) 45%,
+      rgba(245, 247, 251, 0.9) 100%
+    )
+}
+
+.light .btn-primary {
+  background: linear-gradient(135deg, var(--accent), #986dff);
+  color: white;
+}
+
+.light .btn-secondary {
+  background: rgba(23, 26, 36, 0.04);
+  color: var(--text);
+}
+
+.light .hero-card,
+.light .movie-card,
+.light .search-box {
+  background: var(--surface);
+}
+
+.light .meta-list li {
+  background: rgba(23, 26, 36, 0.05);
+}
+
+.light .card-action {
+  background: rgba(23, 26, 36, 0.04);
+}
+
+.light .card-action--detail {
+  background: rgba(107, 78, 255, 0.12);
+  color: #5a3ed1;
+}
+
+.light .card-rating {
+  background: rgba(107, 78, 255, 0.12);
+  color: #5a3ed1;
+}
+
+.light .card-badge,
+.light .pill {
+  background: rgba(21, 159, 145, 0.12);
+}
+
+.light .movie-card:hover,
+.light .movie-card:focus-within {
+  border-color: rgba(107, 78, 255, 0.55);
+}
+
+.light .card-action:hover,
+.light .card-action:focus-visible,
+.light .theme-toggle:hover,
+.light .theme-toggle:focus-visible,
+.light .menu-toggle:hover,
+.light .menu-toggle:focus-visible {
+  border-color: rgba(107, 78, 255, 0.55);
 }
