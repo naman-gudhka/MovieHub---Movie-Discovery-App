@@ -65,6 +65,20 @@
   gap: 0.9rem;
 }
 
+.site-nav-open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
 .site-nav a {
   color: var(--muted);
   font-size: 0.95rem;
