@@ -34,7 +34,7 @@
             <a href="#trending">Trending</a>
             <a href="#watchlist">Watchlist</a>
             <a href="#favorites">Favorites</a>
-            <a href="#about">About</a>
+            <a href="about.html">About</a>
           </nav>
         </div>
       </div>
@@ -96,7 +96,7 @@
             <p>Handpicked stories for every kind of movie night.</p>
           </div>
 
-          <div class="movie-grid" id="movie-grid">
+          <div class="movie-grid js-movie-grid" id="movie-grid">
             <article class="movie-card" data-section="browse">
               <img src="assets/images/movie-placeholder.avif" alt="Poster for the fictional film Midnight Harbor" />
               <div class="card-body">
@@ -119,79 +119,10 @@
                 </div>
               </div>
             </article>
-
-            <article class="movie-card" data-section="browse">
-              <img src="assets/images/movie-placeholder.avif" alt="Poster for the fictional film Golden Echo" />
-              <div class="card-body">
-                <div class="card-top">
-                  <span class="card-badge">Trending</span>
-                  <span class="card-rating">4.5</span>
-                </div>
-                <div class="card-description">
-                  <h3>Golden Echo</h3>
-                  <p>A heartfelt drama about music, memory, and second chances.</p>
-                </div>
-                <div class="card-meta">
-                  <span>Drama</span>
-                  <span>2024</span>
-                </div>
-                <div class="card-actions">
-                  <button class="card-action" type="button" aria-label="Like Golden Echo">♡</button>
-                  <button class="card-action" type="button" aria-label="Add Golden Echo to watchlist">+</button>
-                  <button class="card-action card-action--detail" type="button">View Details</button>
-                </div>
-              </div>
-            </article>
-
-            <article class="movie-card" data-section="browse">
-              <img src="assets/images/movie-placeholder.avif" alt="Poster for the fictional film Ember City" />
-              <div class="card-body">
-                <div class="card-top">
-                  <span class="card-badge">#1</span>
-                  <span class="card-rating">4.9</span>
-                </div>
-                <div class="card-description">
-                  <h3>Ember City</h3>
-                  <p>An electric adventure following a street racer and a hidden map.</p>
-                </div>
-                <div class="card-meta">
-                  <span>Adventure</span>
-                  <span>2026</span>
-                </div>
-                <div class="card-actions">
-                  <button class="card-action" type="button" aria-label="Like Ember City">♡</button>
-                  <button class="card-action" type="button" aria-label="Add Ember City to watchlist">+</button>
-                  <button class="card-action card-action--detail" type="button">View Details</button>
-                </div>
-              </div>
-            </article>
-
-            <article class="movie-card" data-section="browse">
-              <img src="assets/images/movie-placeholder.avif" alt="Poster for the fictional film Lantern Vale" />
-              <div class="card-body">
-                <div class="card-top">
-                  <span class="card-badge">Popular</span>
-                  <span class="card-rating">4.3</span>
-                </div>
-                <div class="card-description">
-                  <h3>Lantern Vale</h3>
-                  <p>A warm fantasy about lantern keepers and a forgotten light.</p>
-                </div>
-                <div class="card-meta">
-                  <span>Fantasy</span>
-                  <span>2023</span>
-                </div>
-                <div class="card-actions">
-                  <button class="card-action" type="button" aria-label="Like Lantern Vale">♡</button>
-                  <button class="card-action" type="button" aria-label="Add Lantern Vale to watchlist">+</button>
-                  <button class="card-action card-action--detail" type="button">View Details</button>
-                </div>
-              </div>
-            </article>
           </div>
 
             <div class="section-actions">
-              <button class="btn btn-secondary view-more-btn" type="button" id="view-more-btn">View More</button>
+              <button class="btn btn-secondary view-more-btn js-view-more-btn" type="button" id="view-more-btn">View More</button>
             </div>
         </div>
       </section>
@@ -309,6 +240,6 @@
       </div>
     </footer>
 
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js" type="module"></script>
   </body>
 </html>

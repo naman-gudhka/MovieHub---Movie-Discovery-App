@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Browse Movies | MovieHub</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html" aria-label="MovieHub home">
+          <span class="brand-mark">M</span>
+          <span>MovieHub</span>
+        </a>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-label="Toggle light and dark mode">
+            <span class="toggle-icon" aria-hidden="true">☀︎</span>
+            <span class="toggle-label">Theme</span>
+          </button>
+
+          <button class="menu-toggle" type="button" aria-label="Open navigation menu">
+            &#9776;
+          </button>
+
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="#trending">Trending</a>
+            <a href="#watchlist">Watchlist</a>
+            <a href="#favorites">Favorites</a>
+            <a href="about.html">About</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+
+  <main>
+
+    <!-- Browse Hero -->
+    <section class="browse-hero">
+      <div class="container">
+
+        <span class="section-kicker">BROWSE MOVIES</span>
+
+        <h1>Find something worth watching.</h1>
+
+        <p>
+          Explore the MovieHub collection and discover movies
+          across genres, languages, and years.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- Browse Content -->
+    <section class="browse-section">
+      <div class="container">
+
+        <!-- Filters -->
+        <div class="browse-toolbar">
+
+          <div class="browse-toolbar__heading">
+            <h2>All movies</h2>
+            <p>
+              <span class="js-movie-count">100</span> movies
+            </p>
+          </div>
+
+          <div class="movie-filters">
+
+            <div class="filter-group">
+              <label for="genre-filter">Genre</label>
+
+              <select id="genre-filter" class="movie-filter">
+                <option value="all">All genres</option>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="crime">Crime</option>
+                <option value="drama">Drama</option>
+                <option value="romance">Romance</option>
+                <option value="thriller">Thriller</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="animation">Animation</option>
+              </select>
+            </div>
+
+
+            <div class="filter-group">
+              <label for="language-filter">Language</label>
+
+              <select id="language-filter" class="movie-filter">
+                <option value="all">All languages</option>
+                <option value="hindi">Hindi</option>
+                <option value="gujarati">Gujarati</option>
+                <option value="tamil">Tamil</option>
+                <option value="telugu">Telugu</option>
+                <option value="malayalam">Malayalam</option>
+                <option value="kannada">Kannada</option>
+                <option value="marathi">Marathi</option>
+                <option value="bengali">Bengali</option>
+                <option value="punjabi">Punjabi</option>
+                <option value="english">English</option>
+                <option value="japanese">Japanese</option>
+                <option value="korean">Korean</option>
+              </select>
+            </div>
+
+
+            <div class="filter-group">
+              <label for="year-filter">Year</label>
+
+              <select id="year-filter" class="movie-filter">
+                <option value="all">All years</option>
+                <option value="2020s">2020s</option>
+                <option value="2010s">2010s</option>
+                <option value="2000s">2000s</option>
+                <option value="1990s">1990s</option>
+                <option value="older">Before 1990</option>
+              </select>
+            </div>
+
+
+            <div class="filter-group">
+              <label for="rating-filter">Rating</label>
+
+              <select id="rating-filter" class="movie-filter">
+                <option value="all">Any rating</option>
+                <option value="9">9+</option>
+                <option value="8">8+</option>
+                <option value="7">7+</option>
+                <option value="6">6+</option>
+              </select>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Movie Grid -->
+        <div
+          class="movie-grid js-movie-grid"
+          aria-live="polite"
+        >
+          <!-- Movie cards rendered by JavaScript -->
+        </div>
+
+
+        <!-- No Results -->
+        <div class="no-results js-no-results" hidden>
+
+          <h2>No movies found</h2>
+
+          <p>
+            Try changing your filters to discover more movies.
+          </p>
+
+          <button
+            class="button button--primary js-clear-filters"
+            type="button"
+          >
+            Clear filters
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+
+      <p>© 2025 MovieHub. All rights reserved.</p>
+
+      <p>Discover something worth watching.</p>
+
+    </div>
+  </footer>
+
+
+  <script type="module" src="assets/js/navigation.js"></script>
+  <script type="module" src="assets/js/theme.js"></script>
+  <script type="module" src="assets/js/browse.js"></script>
+
+</body>
+</html>

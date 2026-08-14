@@ -11,6 +11,3 @@
   5.TMDB API
   6.Git & Github for version control
   7.VS Code & Live server for development
-
-# Current Status:
-  refactor: split stylesheet into modules.
