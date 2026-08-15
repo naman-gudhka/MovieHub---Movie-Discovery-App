@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MovieHub | Movie Details</title>
+
+    <meta
+      name="description"
+      content="Explore movie details, ratings, genres, languages, and more on MovieHub."
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+      <div class="container nav-bar">
+
+        <a class="brand" href="index.html" aria-label="MovieHub home">
+          <span class="brand-mark">M</span>
+          <span>MovieHub</span>
+        </a>
+
+        <div class="nav-actions">
+
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Toggle light and dark mode"
+          >
+            <span class="toggle-icon" aria-hidden="true">☀︎</span>
+            <span class="toggle-label">Theme</span>
+          </button>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+          >
+            &#9776;
+          </button>
+
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="index.html#trending">Trending</a>
+            <a href="index.html#watchlist">Watchlist</a>
+            <a href="index.html#favorites">Favorites</a>
+            <a href="about.html">About</a>
+          </nav>
+
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+
+      <!-- Movie Details Hero -->
+      <section
+        class="movie-details-hero"
+        aria-labelledby="movie-title"
+      >
+        <div class="container">
+
+          <div class="details-hero">
+
+            <!-- Movie Poster -->
+            <div class="details-poster">
+
+              <img
+                src="assets/images/movie-placeholder.avif"
+                alt="Poster for Movie Title"
+              />
+
+            </div>
+
+
+            <!-- Movie Information -->
+            <div class="details-info">
+
+              <div class="details-top">
+
+                <span class="card-badge">
+                  Popular
+                </span>
+
+                <span class="card-rating">
+                  8.7
+                </span>
+
+              </div>
+
+
+              <h1 id="movie-title">
+                Movie Title
+              </h1>
+
+
+              <p class="details-description">
+                A compelling description of the movie will appear here.
+                This section will eventually be populated from the movie
+                dataset.
+              </p>
+
+
+              <div class="details-meta">
+                <span>Drama</span>
+                <span>Hindi</span>
+                <span>2024</span>
+              </div>
+
+
+              <div class="details-actions">
+
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                >
+                  ♡ Like
+                </button>
+
+                <button
+                  class="btn btn-secondary"
+                  type="button"
+                >
+                  + Watchlist
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- Movie Information -->
+      <section
+        class="movie-information"
+        aria-labelledby="movie-information-title"
+      >
+        <div class="container">
+
+          <div class="section-heading">
+
+            <h2 id="movie-information-title">
+              About the Movie
+            </h2>
+
+            <p>
+              Explore more information about this movie.
+            </p>
+
+          </div>
+
+
+          <div class="details-grid">
+
+            <!-- Overview -->
+            <article class="details-card">
+
+              <h3>
+                Overview
+              </h3>
+
+              <p>
+                A longer description of the movie will appear here.
+                This section will eventually contain the movie's full
+                description from the dataset.
+              </p>
+
+            </article>
+
+
+            <!-- Movie Details -->
+            <article class="details-card">
+
+              <h3>
+                Movie Details
+              </h3>
+
+              <dl class="details-list">
+
+                <div>
+                  <dt>Release Year</dt>
+                  <dd>2024</dd>
+                </div>
+
+                <div>
+                  <dt>Language</dt>
+                  <dd>Hindi</dd>
+                </div>
+
+                <div>
+                  <dt>Genre</dt>
+                  <dd>Drama</dd>
+                </div>
+
+                <div>
+                  <dt>Rating</dt>
+                  <dd>8.7</dd>
+                </div>
+
+              </dl>
+
+            </article>
+
+
+            <!-- Keywords -->
+            <article class="details-card">
+
+              <h3>
+                Keywords
+              </h3>
+
+              <div class="keyword-list">
+
+                <span>drama</span>
+                <span>family</span>
+                <span>friendship</span>
+                <span>journey</span>
+                <span>mystery</span>
+
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+
+        <p>
+          © 2026 MovieHub. Built for curious viewers.
+        </p>
+
+        <a href="index.html#home">
+          Back to top
+        </a>
+
+      </div>
+    </footer>
+
+    <script type="module" src="assets/js/navigation.js"></script>
+    <script type="module" src="assets/js/theme.js"></script>
+    <script type="module" src="assets/js/details.js"></script>
+
+  </body>
+</html>     

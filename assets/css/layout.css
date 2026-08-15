@@ -60,10 +60,6 @@
   background: rgba(255, 255, 255, 0.85);
 }
 
-/* =========================
-   About Page
-   ========================= */
-
 .about-hero {
   padding: var(--space-5) 0;
   min-height: 72vh;
@@ -163,4 +159,24 @@
   flex-direction: column;
   gap: var(--space-3);
   margin-bottom: var(--space-4);
+}
+
+.movie-details-hero {
+  padding: 8rem 0 var(--space-5) 0;
+}
+
+.details-hero {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: stretch;
+}
+
+.movie-information {
+  padding: var(--space-5) 0;
+}
+
+.details-grid {
+  display: grid;
+  gap: var(--space-3);
 }
