@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MovieHub | Watchlist</title>
+
+    <meta
+      name="description"
+      content="Keep track of movies you want to watch with your MovieHub watchlist."
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+      <div class="container nav-bar">
+
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="MovieHub home"
+        >
+          <span class="brand-mark">M</span>
+          <span>MovieHub</span>
+        </a>
+
+        <div class="nav-actions">
+
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Toggle light and dark mode"
+          >
+            <span class="toggle-icon" aria-hidden="true">☀︎</span>
+            <span class="toggle-label">Theme</span>
+          </button>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+          >
+            &#9776;
+          </button>
+
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="index.html#trending">Trending</a>
+            <a
+              href="watchlists.html"
+              aria-current="page"
+            >
+              Watchlist
+            </a>
+            <a href="favorites.html">Favorites</a>
+            <a href="about.html">About</a>
+          </nav>
+
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+
+      <!-- Watchlist Section -->
+      <section class="movies-section favorites-section">
+        <div class="container">
+
+          <div class="section-heading">
+            <h1>Your Watchlist</h1>
+
+            <p>
+              <span class="js-watchlist-count">0</span>
+              movies saved to your watchlist.
+            </p>
+          </div>
+
+
+          <!-- Watchlist Movie Grid -->
+          <div
+            class="movie-grid js-watchlist-grid"
+            aria-live="polite"
+          ></div>
+
+
+          <!-- Empty State -->
+          <div
+            class="empty-state js-watchlist-empty"
+            hidden
+          >
+
+            <div
+              class="empty-state-icon"
+              aria-hidden="true"
+            >
+              +
+            </div>
+
+            <h2>Your watchlist is empty</h2>
+
+            <p>
+              Add movies you want to watch later and they'll appear here.
+            </p>
+
+            <a
+              class="btn btn-primary"
+              href="browse.html"
+            >
+              Browse Movies
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>
+          © 2026 MovieHub. Built for curious viewers.
+        </p>
+
+        <a href="index.html">
+          Back to top
+        </a>
+      </div>
+    </footer>
+
+    <script src="./assets/js/theme.js"></script>
+    <script src="./assets/data/user.js"></script>
+    <script src="./assets/js/watchlist.js" type="module"></script>
+
+  </body>
+</html>

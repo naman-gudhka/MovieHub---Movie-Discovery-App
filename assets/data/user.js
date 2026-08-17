@@ -1,17 +1,13 @@
 const STORAGE_KEY = 'moviehub-user';
 
-export const user = loadFromStorage();
+export const user = loadFromStorage() || {
+  likedMovies: [],
+  watchlist: []
+};
 
 function loadFromStorage(){
+
   const savedUser = localStorage.getItem(STORAGE_KEY);
-
-  if(!savedUser || savedUser.length === 0){
-    return {
-      likedMovie: [],
-      watchlist: []
-    }
-  }
-
   return JSON.parse(savedUser);
 
 }

@@ -1,5 +1,5 @@
 import { movies } from "../data/movies.js";
-import { renderMovieCards, movieCardInteraction } from "./movies.js";
+import { renderMovieCards, movieCardInteraction, watchlistInteraction } from "./movies.js";
 
 const movieGrid = document.querySelector('.js-movie-grid');
 
@@ -103,6 +103,7 @@ function filterMovies(){
 
   movieCount.textContent = filteredMovies.length;
 
+  
   renderMovieCards(filteredMovies, movieGrid);
 
   if(filteredMovies.length === 0){
@@ -132,5 +133,6 @@ clearFilterBtn.addEventListener('click', () => {
 
 });
 
+watchlistInteraction(movieGrid);
 movieCardInteraction(movieGrid);
 renderMovieCards(movies, movieGrid);

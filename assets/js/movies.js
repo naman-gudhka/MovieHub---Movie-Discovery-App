@@ -6,6 +6,7 @@ export function renderMovieCards(movieList, movieGrid){
 
   movieList.forEach((movie) => {
     const isLiked = user.likedMovies.includes(movie.id);
+    const inWatchlist = user.watchlist.includes(movie.id);
 
     movieCardHTML += `
       <article class="movie-card" data-movie-id="${movie.id}">
@@ -34,7 +35,9 @@ export function renderMovieCards(movieList, movieGrid){
             <button class="card-action card-action--like ${isLiked ? 'liked' : ''}" type="button" aria-label="${isLiked ? `unlike ${movie.title}` : `Like ${movie.title}`}">
               ${isLiked ? '♥' : '♡'}
             </button>
-            <button class="card-action" type="button" aria-label="Add ${movie.title} to watchlist">+</button>
+            <button class="card-action card-action--watchlist" type="button" aria-label="Add ${movie.title} to watchlist">
+              ${inWatchlist ? '✔' : '+'}
+            </button>
             <button class="card-action card-action--detail" type="button">View Details</button>
           </div>
         </div>
@@ -68,7 +71,9 @@ export function movieCardInteraction(movieGrid, onUnlike){
       );
       saveToStorage();
       updateLikeButtons(movieId);
-      onUnlike(movieCard);
+      if(onUnlike){
+        onUnlike(movieCard);
+      }
     
     }else{
       
@@ -91,6 +96,56 @@ function updateLikeButtons(movieId){
 
     likeButton.classList.toggle('liked' , isLiked);
     likeButton.textContent = isLiked ? '♥' : '♡';
+
+  });
+}
+
+export function watchlistInteraction(movieGrid, onRemove){
+  movieGrid.addEventListener('click', (event) => {
+    
+    const watchlistButton = event.target.closest('.card-action--watchlist');
+  
+    if(!watchlistButton){
+      return;
+    }
+
+    const movieCard = watchlistButton.closest('.movie-card');
+
+    const movieId = Number(movieCard.dataset.movieId);
+
+    const inWatchlist = user.watchlist.includes(movieId);
+
+    if(inWatchlist){
+      
+      user.watchlist = user.watchlist.filter(
+        id => id != movieId
+      );
+
+      if(onRemove){
+        onRemove(movieCard);
+      }
+
+    }else{
+
+      user.watchlist.push(movieId);
+
+    }
+
+    saveToStorage();
+    updateWatchlistButton(movieId);
+  
+  });
+}
+
+function updateWatchlistButton(movieId){
+  const movieCards = document.querySelectorAll(`[data-movie-id="${movieId}"]`);
+
+  movieCards.forEach((movieCard) => {
+    const watchlistButton = movieCard.querySelector('.card-action--watchlist');
+
+    const inWatchlist = user.watchlist.includes(movieId);
+
+    watchlistButton.textContent = inWatchlist ? '✔' : '+';
 
   });
 }
