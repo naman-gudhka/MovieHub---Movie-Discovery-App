@@ -1,18 +1,22 @@
 import './theme.js';
 import './navigation.js';
 import {movies} from '../data/movies.js';
-import {renderMovieCards} from './movies.js';
+import {renderMovieCards, movieCardInteraction} from './movies.js';
 
 const movieGrid = document.querySelector('.js-movie-grid');
 
 const trendingMovieGrid = document.querySelector('.js-movie-grid-trending');
 
+const browseMovies = movies.slice(0, 4);
+
 const trendingMovies = movies
                       .filter(movie => movie.status.includes('trending'))
                       .slice(0,4);
 
-renderMovieCards(movies.slice(0, 4), movieGrid);
+movieCardInteraction(movieGrid);
+renderMovieCards(browseMovies, movieGrid);
 
+movieCardInteraction(trendingMovieGrid);
 renderMovieCards(trendingMovies, trendingMovieGrid);
 
 document.querySelector('.js-view-more-btn')

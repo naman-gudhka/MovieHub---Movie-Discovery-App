@@ -1,10 +1,14 @@
+import {user, saveToStorage} from '../data/user.js';
+
 export function renderMovieCards(movieList, movieGrid){
   
   let movieCardHTML = '';
 
   movieList.forEach((movie) => {
+    const isLiked = user.likedMovies.includes(movie.id);
+
     movieCardHTML += `
-      <article class="movie-card" data-section="browse">
+      <article class="movie-card" data-movie-id="${movie.id}">
         <img src="assets/images/movie-placeholder.avif" alt="Poster for ${movie.title}" />
         <div class="card-body">
           <div class="card-top">
@@ -18,7 +22,7 @@ export function renderMovieCards(movieList, movieGrid){
             }</span>
             <span class="card-rating">${movie.rating}</span>
           </div>
-          <div class="card-description">
+          <div class="card-description"> 
             <h3>${movie.title}</h3>
             <p>${movie.description}</p>
           </div>
@@ -27,7 +31,9 @@ export function renderMovieCards(movieList, movieGrid){
             <span>${movie.year}</span>
           </div>
           <div class="card-actions">
-            <button class="card-action" type="button" aria-label="Like ${movie.title}">♡</button>
+            <button class="card-action card-action--like ${isLiked ? 'liked' : ''}" type="button" aria-label="${isLiked ? `unlike ${movie.title}` : `Like ${movie.title}`}">
+              ${isLiked ? '♥' : '♡'}
+            </button>
             <button class="card-action" type="button" aria-label="Add ${movie.title} to watchlist">+</button>
             <button class="card-action card-action--detail" type="button">View Details</button>
           </div>
@@ -38,4 +44,53 @@ export function renderMovieCards(movieList, movieGrid){
 
   movieGrid.innerHTML = movieCardHTML;
 
+}
+
+export function movieCardInteraction(movieGrid, onUnlike){
+  movieGrid.addEventListener('click', (event) => {
+    
+    const likeButton = event.target.closest('.card-action--like');
+
+    if(!likeButton){
+      return;
+    }
+
+    const movieCard = likeButton.closest('.movie-card');
+
+    const movieId = Number(movieCard.dataset.movieId);
+    
+    const isLiked = user.likedMovies.includes(movieId);
+
+    if(isLiked){
+      
+      user.likedMovies = user.likedMovies.filter(
+        id => id != movieId
+      );
+      saveToStorage();
+      updateLikeButtons(movieId);
+      onUnlike(movieCard);
+    
+    }else{
+      
+      user.likedMovies.push(movieId);
+      saveToStorage();
+      updateLikeButtons(movieId);
+    
+    }
+
+  });
+}
+
+function updateLikeButtons(movieId){
+  const movieCards = document.querySelectorAll(`[data-movie-id="${movieId}"]`);
+
+  movieCards.forEach((movieCard) => {
+    const likeButton = movieCard.querySelector('.card-action--like');
+
+    const isLiked = user.likedMovies.includes(movieId);
+
+    likeButton.classList.toggle('liked' , isLiked);
+    likeButton.textContent = isLiked ? '♥' : '♡';
+
+  });
 }

@@ -281,6 +281,10 @@
   transition: border-color 180ms ease, transform 180ms ease;
 }
 
+.liked{
+  color: red;
+}
+
 .card-action:hover,
 .card-action:focus-visible {
   transform: translateY(-1px);
@@ -959,4 +963,57 @@
   color: #cdbdff;
   font-size: 0.85rem;
   font-weight: 600;
+}
+
+.empty-state {
+  width: 100%;
+  max-width: 680px;
+
+  margin: var(--space-3) auto  var(--space-5);
+  padding: 4rem 2.5rem;
+
+  text-align: center;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+
+  background: var(--surface);
+}
+
+.empty-state-icon {
+  display: grid;
+  place-items: center;
+
+  width: 4rem;
+  height: 4rem;
+
+  margin: 0 auto var(--space-3);
+
+  border-radius: 50%;
+
+  background: rgba(124, 92, 255, 0.12);
+  color: var(--accent-2);
+
+  font-size: 2rem;
+}
+
+.empty-state h2 {
+  margin: 0 0 var(--space-2);
+
+  font-size: 1.6rem;
+}
+
+.empty-state p {
+  max-width: 440px;
+
+  margin: 0 auto var(--space-4);
+
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.empty-state .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }

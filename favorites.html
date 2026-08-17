@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MovieHub | Favorites</title>
+
+    <meta
+      name="description"
+      content="View and manage your favorite movies on MovieHub."
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+      <div class="container nav-bar">
+
+        <a class="brand" href="index.html" aria-label="MovieHub home">
+          <span class="brand-mark">M</span>
+          <span>MovieHub</span>
+        </a>
+
+        <div class="nav-actions">
+
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Toggle light and dark mode"
+          >
+            <span class="toggle-icon" aria-hidden="true">☀︎</span>
+            <span class="toggle-label">Theme</span>
+          </button>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+          >
+            &#9776;
+          </button>
+
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="index.html#trending">Trending</a>
+            <a href="watchlist.html">Watchlist</a>
+            <a href="favorites.html" aria-current="page">Favorites</a>
+            <a href="about.html">About</a>
+          </nav>
+
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+
+      <!-- Favorites Movies -->
+      <section class="movies-section favorites-section">
+        <div class="container">
+
+          <div class="section-heading">
+            <div>
+              <h2>Your Favorites</h2>
+              <p>
+                <span class="js-favorite-count">0</span>
+                movies saved as favorites.
+              </p>
+            </div>
+          </div>
+
+
+          <!-- Movie Grid -->
+          <div
+            class="movie-grid js-favorites-grid"
+            aria-live="polite"
+          ></div>
+
+
+          <!-- Empty State -->
+          <div
+            class="empty-state js-favorites-empty"
+            hidden
+          >
+            <div class="empty-state-icon" aria-hidden="true">♡</div>
+
+            <h2>No favorites yet</h2>
+
+            <p>
+              Start exploring movies and add your favorites to see them here.
+            </p>
+
+            <a
+              class="btn btn-primary"
+              href="browse.html"
+            >
+              Browse Movies
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© 2026 MovieHub. Built for curious viewers.</p>
+        <a href="index.html">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="./assets/js/theme.js"></script>
+    <script src="./assets/js/navigation.js"></script>
+    <script src="./assets/js/favourites.js" type="module"></script>
+
+  </body>
+</html>
