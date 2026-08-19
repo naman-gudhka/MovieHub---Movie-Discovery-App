@@ -1,7 +1,7 @@
 import './theme.js';
 import './navigation.js';
 import {movies} from '../data/movies.js';
-import {renderMovieCards, movieCardInteraction, watchlistInteraction} from './movies.js';
+import {renderMovieCards, movieCardInteraction, watchlistInteraction, navigateToDetailsPage} from './movies.js';
 
 const movieGrid = document.querySelector('.js-movie-grid');
 
@@ -15,10 +15,12 @@ const trendingMovies = movies
 
 movieCardInteraction(movieGrid);
 watchlistInteraction(movieGrid);
+navigateToDetailsPage(movieGrid);
 renderMovieCards(browseMovies, movieGrid);
 
 movieCardInteraction(trendingMovieGrid);
 watchlistInteraction(trendingMovieGrid);
+navigateToDetailsPage(movieGrid);
 renderMovieCards(trendingMovies, trendingMovieGrid);
 
 document.querySelector('.js-view-more-btn')

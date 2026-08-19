@@ -69,13 +69,7 @@
           <div class="details-hero">
 
             <!-- Movie Poster -->
-            <div class="details-poster">
-
-              <img
-                src="assets/images/movie-placeholder.avif"
-                alt="Poster for Movie Title"
-              />
-
+            <div class="details-poster js-details-poster">
             </div>
 
 
@@ -84,47 +78,38 @@
 
               <div class="details-top">
 
-                <span class="card-badge">
-                  Popular
+                <span class="card-badge js-card-badge">
                 </span>
 
-                <span class="card-rating">
-                  8.7
+                <span class="card-rating js-card-rating">
                 </span>
 
               </div>
 
 
               <h1 id="movie-title">
-                Movie Title
               </h1>
 
 
-              <p class="details-description">
-                A compelling description of the movie will appear here.
-                This section will eventually be populated from the movie
-                dataset.
+              <p class="details-description js-details-description">
               </p>
 
 
-              <div class="details-meta">
-                <span>Drama</span>
-                <span>Hindi</span>
-                <span>2024</span>
+              <div class="details-meta js-details-meta">
               </div>
 
 
               <div class="details-actions">
 
                 <button
-                  class="btn btn-primary"
+                  class="btn btn-primary js-like-button"
                   type="button"
                 >
                   ♡ Like
                 </button>
 
                 <button
-                  class="btn btn-secondary"
+                  class="btn btn-secondary js-watchlist-button"
                   type="button"
                 >
                   + Watchlist
@@ -169,11 +154,7 @@
                 Overview
               </h3>
 
-              <p>
-                A longer description of the movie will appear here.
-                This section will eventually contain the movie's full
-                description from the dataset.
-              </p>
+              <p class="js-movie-description"></p>
 
             </article>
 
@@ -189,22 +170,27 @@
 
                 <div>
                   <dt>Release Year</dt>
-                  <dd>2024</dd>
+                  <dd id="js-year"></dd>
                 </div>
 
                 <div>
                   <dt>Language</dt>
-                  <dd>Hindi</dd>
+                  <dd id="js-language"></dd>
                 </div>
 
                 <div>
                   <dt>Genre</dt>
-                  <dd>Drama</dd>
+                  <dd id="js-genre"></dd>
                 </div>
 
                 <div>
                   <dt>Rating</dt>
-                  <dd>8.7</dd>
+                  <dd id="js-rating"></dd>
+                </div>
+
+                <div>
+                  <dt>Director</dt>
+                  <dd id="js-director"></dd>
                 </div>
 
               </dl>
@@ -219,14 +205,7 @@
                 Keywords
               </h3>
 
-              <div class="keyword-list">
-
-                <span>drama</span>
-                <span>family</span>
-                <span>friendship</span>
-                <span>journey</span>
-                <span>mystery</span>
-
+              <div class="keyword-list js-keyword-list">
               </div>
 
             </article>
@@ -250,6 +229,13 @@
         <a href="index.html#home">
           Back to top
         </a>
+
+        <p>
+          Movie data and images provided by
+          <a href="https://www.themoviedb.org/" target="_blank">
+            TMDB
+          </a>.
+        </p>
 
       </div>
     </footer>

@@ -10,7 +10,7 @@ export function renderMovieCards(movieList, movieGrid){
 
     movieCardHTML += `
       <article class="movie-card" data-movie-id="${movie.id}">
-        <img src="assets/images/movie-placeholder.avif" alt="Poster for ${movie.title}" />
+        <img src="${movie.poster}" alt="Poster for ${movie.title}" />
         <div class="card-body">
           <div class="card-top">
             <span class="card-badge">${
@@ -146,6 +146,24 @@ function updateWatchlistButton(movieId){
     const inWatchlist = user.watchlist.includes(movieId);
 
     watchlistButton.textContent = inWatchlist ? '✔' : '+';
+
+  });
+}
+
+export function navigateToDetailsPage(movieGrid){
+  movieGrid.addEventListener('click', () => {
+
+    const detailsButton = event.target.closest('.card-action--detail');
+
+    if(!detailsButton){
+      return;
+    }
+
+    const movieCard = detailsButton.closest('.movie-card');
+
+    const movieId = Number(movieCard.dataset.movieId);
+
+    window.location.href = `details.html?id=${movieId}`;
 
   });
 }

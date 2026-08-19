@@ -1,6 +1,6 @@
 import { movies } from "../data/movies.js";
 import { user } from "../data/user.js";
-import { renderMovieCards, movieCardInteraction , watchlistInteraction } from "./movies.js";
+import { renderMovieCards, movieCardInteraction , watchlistInteraction, navigateToDetailsPage } from "./movies.js";
 
 const watchlistGrid = document.querySelector('.js-watchlist-grid');
 
@@ -21,6 +21,7 @@ if(watchlistMovies.length === 0){
   
   watchlistEmpty.hidden = true;
   watchlistCount.textContent = watchlistMovies.length;  
+  navigateToDetailsPage(watchlistGrid);
   movieCardInteraction(watchlistGrid);
   watchlistInteraction(watchlistGrid, (movieCard) => {
     movieCard.remove();

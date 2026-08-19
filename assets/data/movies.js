@@ -1,1901 +1,3283 @@
 export const movies = [
   {
-    id: 1,
-    title: "Dhurandhar",
-    description: "An intense action thriller built around covert operations and dangerous missions.",
-    poster: "assets/images/movies/dhurandhar.jpg",
-    backdrop: "assets/images/movies/dhurandhar-backdrop.jpg",
-    year: 2025,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Action", "Thriller"],
-    rating: 8.3,
-    director: "Aditya Dhar",
-    cast: ["Ranveer Singh", "Akshaye Khanna", "Sanjay Dutt"],
-    status: ["popular", "trending", "latest"],
-    rank: 1,
-    keywords: ["action", "thriller"]
-  },
-
-  {
-    id: 2,
-    title: "12th Fail",
-    description: "A determined young man overcomes setbacks while chasing an ambitious civil-service dream.",
-    poster: "assets/images/movies/12th-fail.jpg",
-    backdrop: "assets/images/movies/12th-fail-backdrop.jpg",
-    year: 2023,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 8.8,
-    director: "Vidhu Vinod Chopra",
-    cast: ["Vikrant Massey", "Medha Shankr", "Anant V Joshi"],
-    status: ["popular", "latest", "trending"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 3,
-    title: "Jawan",
-    description: "A high-energy action story driven by justice, identity, and a larger social mission.",
-    poster: "assets/images/movies/jawan.jpg",
-    backdrop: "assets/images/movies/jawan-backdrop.jpg",
-    year: 2023,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Action", "Thriller"],
-    rating: 7.6,
-    director: "Atlee",
-    cast: ["Shah Rukh Khan", "Nayanthara", "Vijay Sethupathi"],
-    status: ["trending", "latest"],
-    rank: 3,
-    keywords: ["action", "thriller"]
-  },
-
-  {
-    id: 4,
-    title: "Dangal",
-    description: "A father trains his daughters to compete at the highest level despite social resistance.",
-    poster: "assets/images/movies/dangal.jpg",
-    backdrop: "assets/images/movies/dangal-backdrop.jpg",
-    year: 2016,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 8.3,
-    director: "Nitesh Tiwari",
-    cast: ["Aamir Khan", "Fatima Sana Shaikh", "Sanya Malhotra"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 5,
-    title: "3 Idiots",
-    description: "Three college friends navigate friendship, pressure, ambition, and the meaning of success.",
-    poster: "assets/images/movies/3-idiots.jpg",
-    backdrop: "assets/images/movies/3-idiots-backdrop.jpg",
-    year: 2009,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Comedy", "Drama"],
-    rating: 8.4,
-    director: "Rajkumar Hirani",
-    cast: ["Aamir Khan", "R. Madhavan", "Sharman Joshi"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["comedy", "drama"]
-  },
-
-  {
-    id: 6,
-    title: "Lagaan",
-    description: "Villagers challenge a powerful colonial system through an extraordinary cricket match.",
-    poster: "assets/images/movies/lagaan.jpg",
-    backdrop: "assets/images/movies/lagaan-backdrop.jpg",
-    year: 2001,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 8.1,
-    director: "Ashutosh Gowariker",
-    cast: ["Aamir Khan", "Gracy Singh", "Rachel Shelley"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 7,
-    title: "Taare Zameen Par",
-    description: "A child struggling at school finds a teacher who understands his unique way of seeing the world.",
-    poster: "assets/images/movies/taare-zameen-par.jpg",
-    backdrop: "assets/images/movies/taare-zameen-par-backdrop.jpg",
-    year: 2007,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 8.3,
-    director: "Aamir Khan",
-    cast: ["Darsheel Safary", "Aamir Khan", "Tisca Chopra"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 8,
-    title: "Sholay",
-    description: "Two criminals are hired to help a former police officer take on a ruthless outlaw.",
-    poster: "assets/images/movies/sholay.jpg",
-    backdrop: "assets/images/movies/sholay-backdrop.jpg",
-    year: 1975,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Action", "Crime"],
-    rating: 8.1,
-    director: "Ramesh Sippy",
-    cast: ["Amitabh Bachchan", "Dharmendra", "Hema Malini"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["action", "crime"]
-  },
-
-  {
-    id: 9,
-    title: "Andhadhun",
-    description: "A pianist becomes entangled in a dangerous murder mystery where appearances are deceptive.",
-    poster: "assets/images/movies/andhadhun.jpg",
-    backdrop: "assets/images/movies/andhadhun-backdrop.jpg",
-    year: 2018,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Crime", "Thriller"],
-    rating: 8.2,
-    director: "Sriram Raghavan",
-    cast: ["Ayushmann Khurrana", "Tabu", "Radhika Apte"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["crime", "thriller"]
-  },
-
-  {
-    id: 10,
-    title: "Kahaani",
-    description: "A pregnant woman searches Kolkata for her missing husband while uncovering a larger conspiracy.",
-    poster: "assets/images/movies/kahaani.jpg",
-    backdrop: "assets/images/movies/kahaani-backdrop.jpg",
-    year: 2012,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Crime", "Thriller"],
-    rating: 8.1,
-    director: "Sujoy Ghosh",
-    cast: ["Vidya Balan", "Parambrata Chatterjee", "Nawazuddin Siddiqui"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["crime", "thriller"]
-  },
-
-  {
-    id: 11,
-    title: "Hellaro",
-    description: "Hellaro follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/hellaro.jpg",
-    backdrop: "assets/images/movies/hellaro-backdrop.jpg",
-    year: 2019,
-    runtime: 120,
-    languages: ["Gujarati"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 8.6,
-    director: "Abhishek Shah",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 12,
-    title: "Chhello Show",
-    description: "Chhello Show follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/chhello-show.jpg",
-    backdrop: "assets/images/movies/chhello-show-backdrop.jpg",
-    year: 2021,
-    runtime: 120,
-    languages: ["Gujarati"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 7.8,
-    director: "Pan Nalin",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["latest"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 13,
-    title: "Reva",
-    description: "Reva follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/reva.jpg",
-    backdrop: "assets/images/movies/reva-backdrop.jpg",
-    year: 2018,
-    runtime: 120,
-    languages: ["Gujarati"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 7.4,
-    director: "Rahul Bhole",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 14,
-    title: "Jai Bhim",
-    description: "Jai Bhim follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/jai-bhim.jpg",
-    backdrop: "assets/images/movies/jai-bhim-backdrop.jpg",
-    year: 2021,
-    runtime: 120,
-    languages: ["Tamil"],
-    country: "India",
-    genre: ["Crime", "Drama"],
-    rating: 8.7,
-    director: "T. J. Gnanavel",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular", "latest"],
-    rank: 14,
-    keywords: ["crime", "drama"]
-  },
-
-  {
-    id: 15,
-    title: "Vikram",
-    description: "Vikram follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/vikram.jpg",
-    backdrop: "assets/images/movies/vikram-backdrop.jpg",
-    year: 2022,
-    runtime: 120,
-    languages: ["Tamil", "Hindi"],
-    country: "India",
-    genre: ["Action", "Thriller"],
-    rating: 8.3,
-    director: "Lokesh Kanagaraj",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular", "trending", "latest"],
-    rank: 15,
-    keywords: ["action", "thriller"]
-  },
-
-  {
-    id: 16,
-    title: "96",
-    description: "96 follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/96.jpg",
-    backdrop: "assets/images/movies/96-backdrop.jpg",
-    year: 2018,
-    runtime: 120,
-    languages: ["Tamil"],
-    country: "India",
-    genre: ["Romance", "Drama"],
-    rating: 8.5,
-    director: "C. Prem Kumar",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["romance", "drama"]
-  },
-
-  {
-    id: 17,
-    title: "Roja",
-    description: "Roja follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/roja.jpg",
-    backdrop: "assets/images/movies/roja-backdrop.jpg",
-    year: 1992,
-    runtime: 120,
-    languages: ["Tamil"],
-    country: "India",
-    genre: ["Romance", "Thriller"],
-    rating: 8.1,
-    director: "Mani Ratnam",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["romance", "thriller"]
-  },
-
-  {
-    id: 18,
-    title: "Baahubali: The Beginning",
-    description: "Baahubali: The Beginning follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/baahubali-the-beginning.jpg",
-    backdrop: "assets/images/movies/baahubali-the-beginning-backdrop.jpg",
-    year: 2015,
-    runtime: 120,
-    languages: ["Telugu", "Hindi"],
-    country: "India",
-    genre: ["Action", "Drama"],
-    rating: 8.0,
-    director: "S. S. Rajamouli",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular", "trending"],
-    rank: 18,
-    keywords: ["action", "drama"]
-  },
-
-  {
-    id: 19,
-    title: "RRR",
-    description: "RRR follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/rrr.jpg",
-    backdrop: "assets/images/movies/rrr-backdrop.jpg",
-    year: 2022,
-    runtime: 120,
-    languages: ["Telugu", "Hindi"],
-    country: "India",
-    genre: ["Action", "Drama"],
-    rating: 7.9,
-    director: "S. S. Rajamouli",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["trending", "latest"],
-    rank: 19,
-    keywords: ["action", "drama"]
-  },
-
-  {
-    id: 20,
-    title: "Eega",
-    description: "Eega follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/eega.jpg",
-    backdrop: "assets/images/movies/eega-backdrop.jpg",
-    year: 2012,
-    runtime: 120,
-    languages: ["Telugu"],
-    country: "India",
-    genre: ["Action", "Sci-Fi"],
-    rating: 7.7,
-    director: "S. S. Rajamouli",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["action", "sci-fi"]
-  },
-
-  {
-    id: 21,
-    title: "Kumbalangi Nights",
-    description: "Kumbalangi Nights follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/kumbalangi-nights.jpg",
-    backdrop: "assets/images/movies/kumbalangi-nights-backdrop.jpg",
-    year: 2019,
-    runtime: 120,
-    languages: ["Malayalam"],
-    country: "India",
-    genre: ["Drama", "Romance"],
-    rating: 8.5,
-    director: "Madhu C. Narayanan",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama", "romance"]
-  },
-
-  {
-    id: 22,
-    title: "Drishyam 2",
-    description: "Drishyam 2 follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/drishyam-2.jpg",
-    backdrop: "assets/images/movies/drishyam-2-backdrop.jpg",
-    year: 2021,
-    runtime: 120,
-    languages: ["Malayalam"],
-    country: "India",
-    genre: ["Crime", "Thriller"],
-    rating: 8.6,
-    director: "Jeethu Joseph",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular", "latest"],
-    rank: null,
-    keywords: ["crime", "thriller"]
-  },
-
-  {
-    id: 23,
-    title: "Manichitrathazhu",
-    description: "Manichitrathazhu follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/manichitrathazhu.jpg",
-    backdrop: "assets/images/movies/manichitrathazhu-backdrop.jpg",
-    year: 1993,
-    runtime: 120,
-    languages: ["Malayalam"],
-    country: "India",
-    genre: ["Thriller", "Drama"],
-    rating: 8.7,
-    director: "Fazil",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["thriller", "drama"]
-  },
-
-  {
-    id: 24,
-    title: "Kantara",
-    description: "Kantara follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/kantara.jpg",
-    backdrop: "assets/images/movies/kantara-backdrop.jpg",
-    year: 2022,
-    runtime: 120,
-    languages: ["Kannada"],
-    country: "India",
-    genre: ["Action", "Drama"],
-    rating: 8.2,
-    director: "Rishab Shetty",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular", "latest"],
-    rank: null,
-    keywords: ["action", "drama"]
-  },
-
-  {
-    id: 25,
-    title: "Kirik Party",
-    description: "Kirik Party follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/kirik-party.jpg",
-    backdrop: "assets/images/movies/kirik-party-backdrop.jpg",
-    year: 2016,
-    runtime: 120,
-    languages: ["Kannada"],
-    country: "India",
-    genre: ["Comedy", "Drama"],
-    rating: 8.0,
-    director: "Rishab Shetty",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["comedy", "drama"]
-  },
-
-  {
-    id: 26,
-    title: "U-Turn",
-    description: "U-Turn follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/u-turn.jpg",
-    backdrop: "assets/images/movies/u-turn-backdrop.jpg",
-    year: 2016,
-    runtime: 120,
-    languages: ["Kannada"],
-    country: "India",
-    genre: ["Crime", "Thriller"],
-    rating: 7.4,
-    director: "Pawan Kumar",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["crime", "thriller"]
-  },
-
-  {
-    id: 27,
-    title: "Sairat",
-    description: "Sairat follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/sairat.jpg",
-    backdrop: "assets/images/movies/sairat-backdrop.jpg",
-    year: 2016,
-    runtime: 120,
-    languages: ["Marathi"],
-    country: "India",
-    genre: ["Romance", "Drama"],
-    rating: 8.2,
-    director: "Nagraj Manjule",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["romance", "drama"]
-  },
-
-  {
-    id: 28,
-    title: "Natsamrat",
-    description: "Natsamrat follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/natsamrat.jpg",
-    backdrop: "assets/images/movies/natsamrat-backdrop.jpg",
-    year: 2016,
-    runtime: 120,
-    languages: ["Marathi"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 8.8,
-    director: "Mahesh Manjrekar",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 29,
-    title: "Court",
-    description: "Court follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/court.jpg",
-    backdrop: "assets/images/movies/court-backdrop.jpg",
-    year: 2014,
-    runtime: 120,
-    languages: ["Marathi"],
-    country: "India",
-    genre: ["Crime", "Drama"],
-    rating: 7.7,
-    director: "Chaitanya Tamhane",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["crime", "drama"]
-  },
-
-  {
-    id: 30,
-    title: "Pather Panchali",
-    description: "Pather Panchali follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/pather-panchali.jpg",
-    backdrop: "assets/images/movies/pather-panchali-backdrop.jpg",
-    year: 1955,
-    runtime: 120,
-    languages: ["Bengali"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 8.6,
-    director: "Satyajit Ray",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 31,
-    title: "Goopy Gyne Bagha Byne",
-    description: "Goopy Gyne Bagha Byne follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/goopy-gyne-bagha-byne.jpg",
-    backdrop: "assets/images/movies/goopy-gyne-bagha-byne-backdrop.jpg",
-    year: 1969,
-    runtime: 120,
-    languages: ["Bengali"],
-    country: "India",
-    genre: ["Comedy", "Animation"],
-    rating: 8.7,
-    director: "Satyajit Ray",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["comedy", "animation"]
-  },
-
-  {
-    id: 32,
-    title: "Nayak",
-    description: "Nayak follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/nayak.jpg",
-    backdrop: "assets/images/movies/nayak-backdrop.jpg",
-    year: 1966,
-    runtime: 120,
-    languages: ["Bengali"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 8.2,
-    director: "Satyajit Ray",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 33,
-    title: "Carry On Jatta",
-    description: "Carry On Jatta follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/carry-on-jatta.jpg",
-    backdrop: "assets/images/movies/carry-on-jatta-backdrop.jpg",
-    year: 2012,
-    runtime: 120,
-    languages: ["Punjabi"],
-    country: "India",
-    genre: ["Comedy"],
-    rating: 8.3,
-    director: "Smeep Kang",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["comedy"]
-  },
-
-  {
-    id: 34,
-    title: "Chal Mera Putt",
-    description: "Chal Mera Putt follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/chal-mera-putt.jpg",
-    backdrop: "assets/images/movies/chal-mera-putt-backdrop.jpg",
-    year: 2019,
-    runtime: 120,
-    languages: ["Punjabi"],
-    country: "India",
-    genre: ["Comedy", "Drama"],
-    rating: 8.1,
-    director: "Janjot Singh",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["comedy", "drama"]
-  },
-
-  {
-    id: 35,
-    title: "Inception",
-    description: "Inception follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/inception.jpg",
-    backdrop: "assets/images/movies/inception-backdrop.jpg",
-    year: 2010,
-    runtime: 120,
-    languages: ["English"],
-    country: "United Kingdom",
-    genre: ["Sci-Fi", "Thriller"],
-    rating: 8.8,
-    director: "Christopher Nolan",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["sci-fi", "thriller"]
-  },
-
-  {
-    id: 36,
-    title: "Interstellar",
-    description: "Interstellar follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/interstellar.jpg",
-    backdrop: "assets/images/movies/interstellar-backdrop.jpg",
-    year: 2014,
-    runtime: 120,
-    languages: ["English"],
-    country: "United Kingdom",
-    genre: ["Sci-Fi", "Drama"],
-    rating: 8.7,
-    director: "Christopher Nolan",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["sci-fi", "drama"]
-  },
-
-  {
-    id: 37,
-    title: "The Dark Knight",
-    description: "The Dark Knight follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/the-dark-knight.jpg",
-    backdrop: "assets/images/movies/the-dark-knight-backdrop.jpg",
-    year: 2008,
-    runtime: 120,
-    languages: ["English"],
-    country: "United Kingdom",
-    genre: ["Action", "Crime", "Thriller"],
-    rating: 9.0,
-    director: "Christopher Nolan",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["action", "crime", "thriller"]
-  },
-
-  {
-    id: 38,
-    title: "Your Name",
-    description: "Your Name follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/your-name.jpg",
-    backdrop: "assets/images/movies/your-name-backdrop.jpg",
-    year: 2016,
-    runtime: 120,
-    languages: ["Japanese"],
-    country: "Japan",
-    genre: ["Animation", "Romance"],
-    rating: 8.4,
-    director: "Makoto Shinkai",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular", "trending"],
-    rank: 38,
-    keywords: ["animation", "romance"]
-  },
-
-  {
-    id: 39,
-    title: "Spirited Away",
-    description: "Spirited Away follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/spirited-away.jpg",
-    backdrop: "assets/images/movies/spirited-away-backdrop.jpg",
-    year: 2001,
-    runtime: 120,
-    languages: ["Japanese"],
-    country: "Japan",
-    genre: ["Animation", "Drama"],
-    rating: 8.6,
-    director: "Hayao Miyazaki",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["animation", "drama"]
-  },
-
-  {
-    id: 40,
-    title: "Akira",
-    description: "Akira follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/akira.jpg",
-    backdrop: "assets/images/movies/akira-backdrop.jpg",
-    year: 1988,
-    runtime: 120,
-    languages: ["Japanese"],
-    country: "Japan",
-    genre: ["Animation", "Sci-Fi"],
-    rating: 8.0,
-    director: "Katsuhiro Otomo",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["animation", "sci-fi"]
-  },
-
-  {
-    id: 41,
-    title: "Parasite",
-    description: "Parasite follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/parasite.jpg",
-    backdrop: "assets/images/movies/parasite-backdrop.jpg",
-    year: 2019,
-    runtime: 120,
-    languages: ["Korean"],
-    country: "South Korea",
-    genre: ["Crime", "Thriller"],
-    rating: 8.5,
-    director: "Bong Joon Ho",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular", "trending"],
-    rank: 41,
-    keywords: ["crime", "thriller"]
-  },
-
-  {
-    id: 42,
-    title: "Oldboy",
-    description: "Oldboy follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/oldboy.jpg",
-    backdrop: "assets/images/movies/oldboy-backdrop.jpg",
-    year: 2003,
-    runtime: 120,
-    languages: ["Korean"],
-    country: "South Korea",
-    genre: ["Crime", "Thriller"],
-    rating: 8.4,
-    director: "Park Chan-wook",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["crime", "thriller"]
-  },
-
-  {
-    id: 43,
-    title: "Train to Busan",
-    description: "Train to Busan follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/train-to-busan.jpg",
-    backdrop: "assets/images/movies/train-to-busan-backdrop.jpg",
-    year: 2016,
-    runtime: 120,
-    languages: ["Korean"],
-    country: "South Korea",
-    genre: ["Action", "Thriller"],
-    rating: 7.6,
-    director: "Yeon Sang-ho",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["action", "thriller"]
-  },
-
-  {
-    id: 44,
-    title: "Mission Mangal",
-    description: "Mission Mangal follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/mission-mangal.jpg",
-    backdrop: "assets/images/movies/mission-mangal-backdrop.jpg",
-    year: 2019,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Drama", "Sci-Fi"],
-    rating: 7.5,
-    director: "Jagan Shakti",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama", "sci-fi"]
-  },
-
-  {
-    id: 45,
-    title: "PK",
-    description: "PK follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/pk.jpg",
-    backdrop: "assets/images/movies/pk-backdrop.jpg",
-    year: 2014,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Comedy", "Drama", "Sci-Fi"],
-    rating: 7.8,
-    director: "Rajkumar Hirani",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["comedy", "drama", "sci-fi"]
-  },
-
-  {
-    id: 46,
-    title: "Tumbbad",
-    description: "Tumbbad follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/tumbbad.jpg",
-    backdrop: "assets/images/movies/tumbbad-backdrop.jpg",
-    year: 2018,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Thriller", "Sci-Fi"],
-    rating: 8.2,
-    director: "Rahi Anil Barve",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["thriller", "sci-fi"]
-  },
-
-  {
-    id: 47,
-    title: "Mughal-e-Azam",
-    description: "Mughal-e-Azam follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/mughal-e-azam.jpg",
-    backdrop: "assets/images/movies/mughal-e-azam-backdrop.jpg",
-    year: 1960,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Drama", "Romance"],
-    rating: 8.2,
-    director: "K. Asif",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama", "romance"]
-  },
-
-  {
-    id: 48,
-    title: "Anand",
-    description: "Anand follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/anand.jpg",
-    backdrop: "assets/images/movies/anand-backdrop.jpg",
-    year: 1971,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 8.1,
-    director: "Hrishikesh Mukherjee",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 49,
-    title: "Satya",
-    description: "Satya follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/satya.jpg",
-    backdrop: "assets/images/movies/satya-backdrop.jpg",
-    year: 1998,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Crime", "Drama"],
-    rating: 8.2,
-    director: "Ram Gopal Varma",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["crime", "drama"]
-  },
-
-  {
-    id: 50,
-    title: "Dil Se..",
-    description: "Dil Se.. follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
-    poster: "assets/images/movies/dil-se.jpg",
-    backdrop: "assets/images/movies/dil-se-backdrop.jpg",
-    year: 1998,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Romance", "Drama"],
-    rating: 7.5,
-    director: "Mani Ratnam",
-    cast: ["Actor 1", "Actor 2", "Actor 3"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["romance", "drama"]
-  },
-
-    {
-    id: 51,
-    title: "Pushpa: The Rise",
-    description: "Pushpa: The Rise follows a determined laborer whose ambition takes him deep into a dangerous world of power and rivalry.",
-    poster: "assets/images/movies/pushpa-the-rise.jpg",
-    backdrop: "assets/images/movies/pushpa-the-rise-backdrop.jpg",
-    year: 2021,
-    runtime: 120,
-    languages: ["Telugu", "Hindi"],
-    country: "India",
-    genre: ["Action", "Drama"],
-    rating: 7.6,
-    director: "Sukumar",
-    cast: ["Allu Arjun", "Rashmika Mandanna", "Fahadh Faasil"],
-    status: ["popular", "latest"],
-    rank: null,
-    keywords: ["action", "drama"]
-  },
-
-  {
-    id: 52,
-    title: "Pushpa 2: The Rule",
-    description: "Pushpa 2: The Rule continues the struggle for power as Pushpa faces new enemies and challenges.",
-    poster: "assets/images/movies/pushpa-2-the-rule.jpg",
-    backdrop: "assets/images/movies/pushpa-2-the-rule-backdrop.jpg",
-    year: 2024,
-    runtime: 120,
-    languages: ["Telugu", "Hindi"],
-    country: "India",
-    genre: ["Action", "Drama"],
-    rating: 6.8,
-    director: "Sukumar",
-    cast: ["Allu Arjun", "Rashmika Mandanna", "Fahadh Faasil"],
-    status: ["latest"],
-    rank: null,
-    keywords: ["action", "drama"]
-  },
-
-  {
-    id: 53,
-    title: "Kalki 2898 AD",
-    description: "A futuristic Indian epic that combines mythology, technology, and a battle for humanity's future.",
-    poster: "assets/images/movies/kalki-2898-ad.jpg",
-    backdrop: "assets/images/movies/kalki-2898-ad-backdrop.jpg",
-    year: 2024,
-    runtime: 120,
-    languages: ["Telugu", "Hindi"],
-    country: "India",
-    genre: ["Action", "Sci-Fi"],
-    rating: 8.0,
-    director: "Nag Ashwin",
-    cast: ["Prabhas", "Deepika Padukone", "Amitabh Bachchan"],
-    status: ["popular", "latest"],
-    rank: null,
-    keywords: ["action", "sci-fi"]
-  },
-
-  {
-    id: 54,
-    title: "Salaar: Part 1 – Ceasefire",
-    description: "A powerful friendship is tested by violence, loyalty, and a brutal struggle for control.",
-    poster: "assets/images/movies/salaar-part-1-ceasefire.jpg",
-    backdrop: "assets/images/movies/salaar-part-1-ceasefire-backdrop.jpg",
-    year: 2023,
-    runtime: 120,
-    languages: ["Telugu", "Hindi"],
-    country: "India",
-    genre: ["Action", "Thriller"],
-    rating: 6.5,
-    director: "Prashanth Neel",
-    cast: ["Prabhas", "Prithviraj Sukumaran", "Shruti Haasan"],
-    status: ["latest"],
-    rank: null,
-    keywords: ["action", "thriller"]
-  },
-
-  {
-    id: 55,
-    title: "Soorarai Pottru",
-    description: "An ambitious man fights against powerful obstacles to make affordable air travel possible.",
-    poster: "assets/images/movies/soorarai-pottru.jpg",
-    backdrop: "assets/images/movies/soorarai-pottru-backdrop.jpg",
-    year: 2020,
-    runtime: 120,
-    languages: ["Tamil"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 8.6,
-    director: "Sudha Kongara",
-    cast: ["Suriya", "Aparna Balamurali", "Paresh Rawal"],
-    status: ["popular", "latest"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 56,
-    title: "Super Deluxe",
-    description: "Several interconnected stories collide as ordinary people face extraordinary situations and difficult choices.",
-    poster: "assets/images/movies/super-deluxe.jpg",
-    backdrop: "assets/images/movies/super-deluxe-backdrop.jpg",
-    year: 2019,
-    runtime: 120,
-    languages: ["Tamil"],
-    country: "India",
-    genre: ["Crime", "Drama"],
-    rating: 8.2,
-    director: "Thiagarajan Kumararaja",
-    cast: ["Vijay Sethupathi", "Fahadh Faasil", "Ramya Krishnan"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["crime", "drama"]
-  },
-
-  {
-    id: 57,
-    title: "Premam",
-    description: "A young man's journey through love, heartbreak, friendship, and different stages of life.",
-    poster: "assets/images/movies/premam.jpg",
-    backdrop: "assets/images/movies/premam-backdrop.jpg",
-    year: 2015,
-    runtime: 120,
-    languages: ["Malayalam"],
-    country: "India",
-    genre: ["Romance", "Drama"],
-    rating: 8.3,
-    director: "Alphonse Puthren",
-    cast: ["Nivin Pauly", "Sai Pallavi", "Madonna Sebastian"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["romance", "drama"]
-  },
-
-  {
-    id: 58,
-    title: "Charlie",
-    description: "A free-spirited woman begins an adventurous journey while searching for a mysterious artist.",
-    poster: "assets/images/movies/charlie.jpg",
-    backdrop: "assets/images/movies/charlie-backdrop.jpg",
-    year: 2015,
-    runtime: 120,
-    languages: ["Malayalam"],
-    country: "India",
-    genre: ["Romance", "Drama"],
-    rating: 8.0,
-    director: "Martin Prakkat",
-    cast: ["Dulquer Salmaan", "Parvathy Thiruvothu", "Aparna Gopinath"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["romance", "drama"]
-  },
-
-  {
-    id: 59,
-    title: "Aavesham",
-    description: "Three college students become involved with a charismatic gangster whose friendship comes with unexpected consequences.",
-    poster: "assets/images/movies/aavesham.jpg",
-    backdrop: "assets/images/movies/aavesham-backdrop.jpg",
-    year: 2024,
-    runtime: 120,
-    languages: ["Malayalam"],
-    country: "India",
-    genre: ["Action", "Comedy"],
-    rating: 7.8,
-    director: "Jithu Madhavan",
-    cast: ["Fahadh Faasil", "Sajin Gopu", "Hipzster"],
-    status: ["popular", "latest"],
-    rank: null,
-    keywords: ["action", "comedy"]
-  },
-
-  {
-    id: 60,
-    title: "777 Charlie",
-    description: "A lonely man's life changes when an energetic dog enters his world and leads him on an emotional journey.",
-    poster: "assets/images/movies/777-charlie.jpg",
-    backdrop: "assets/images/movies/777-charlie-backdrop.jpg",
-    year: 2022,
-    runtime: 120,
-    languages: ["Kannada"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 8.0,
-    director: "Kiranraj K",
-    cast: ["Rakshit Shetty", "Sangeetha Sringeri", "Raj B. Shetty"],
-    status: ["popular", "latest"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 61,
-    title: "Dia",
-    description: "A young woman experiences love, loss, and unexpected turns that change her understanding of relationships.",
-    poster: "assets/images/movies/dia.jpg",
-    backdrop: "assets/images/movies/dia-backdrop.jpg",
-    year: 2020,
-    runtime: 120,
-    languages: ["Kannada"],
-    country: "India",
-    genre: ["Romance", "Drama"],
-    rating: 8.0,
-    director: "K. S. Ashoka",
-    cast: ["Pruthvi Amber", "Deekshith Shetty", "Kushee Ravi"],
-    status: ["popular", "latest"],
-    rank: null,
-    keywords: ["romance", "drama"]
-  },
-
-  {
-    id: 62,
-    title: "Fandry",
-    description: "A young boy dreams of love and a better life while confronting social prejudice in his village.",
-    poster: "assets/images/movies/fandry.jpg",
-    backdrop: "assets/images/movies/fandry-backdrop.jpg",
-    year: 2013,
-    runtime: 120,
-    languages: ["Marathi"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 8.1,
-    director: "Nagraj Manjule",
-    cast: ["Somnath Awghade", "Rajeshwari Kharat", "Suraj Pawar"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 63,
-    title: "Killa",
-    description: "A young boy adjusts to a new school and unfamiliar surroundings after moving to a different town.",
-    poster: "assets/images/movies/killa.jpg",
-    backdrop: "assets/images/movies/killa-backdrop.jpg",
-    year: 2014,
-    runtime: 120,
-    languages: ["Marathi"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 7.8,
-    director: "Avinash Arun",
-    cast: ["Archit Deodhar", "Parth Bhalerao", "Gaurish Nimkar"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 64,
-    title: "Aamis",
-    description: "An unconventional relationship develops between two people through their shared love of food.",
-    poster: "assets/images/movies/aamis.jpg",
-    backdrop: "assets/images/movies/aamis-backdrop.jpg",
-    year: 2019,
-    runtime: 120,
-    languages: ["Assamese"],
-    country: "India",
-    genre: ["Romance", "Drama"],
-    rating: 8.0,
-    director: "Bhaskar Hazarika",
-    cast: ["Lima Das", "Arghadeep Barua", "Neetali Das"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["romance", "drama"]
-  },
-
-  {
-    id: 65,
-    title: "The Great Indian Kitchen",
-    description: "A newly married woman struggles against deeply rooted expectations and unequal domestic responsibilities.",
-    poster: "assets/images/movies/the-great-indian-kitchen.jpg",
-    backdrop: "assets/images/movies/the-great-indian-kitchen-backdrop.jpg",
-    year: 2021,
-    runtime: 120,
-    languages: ["Malayalam"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 8.1,
-    director: "Jeo Baby",
-    cast: ["Nimisha Sajayan", "Suraj Venjaramoodu", "Ajitha V. M."],
-    status: ["popular", "latest"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 66,
-    title: "Joji",
-    description: "A troubled young man plots against his wealthy family while hiding his growing ambitions.",
-    poster: "assets/images/movies/joji.jpg",
-    backdrop: "assets/images/movies/joji-backdrop.jpg",
-    year: 2021,
-    runtime: 120,
-    languages: ["Malayalam"],
-    country: "India",
-    genre: ["Crime", "Drama"],
-    rating: 7.8,
-    director: "Dileesh Pothan",
-    cast: ["Fahadh Faasil", "Baburaj", "P. N. Sunny"],
-    status: ["latest"],
-    rank: null,
-    keywords: ["crime", "drama"]
-  },
-
-  {
-    id: 67,
-    title: "Kumbalangi Nights",
-    description: "Four brothers living together confront family tensions, love, and their own personal struggles.",
-    poster: "assets/images/movies/kumbalangi-nights.jpg",
-    backdrop: "assets/images/movies/kumbalangi-nights-backdrop.jpg",
-    year: 2019,
-    runtime: 120,
-    languages: ["Malayalam"],
-    country: "India",
-    genre: ["Drama", "Romance"],
-    rating: 8.5,
-    director: "Madhu C. Narayanan",
-    cast: ["Shane Nigam", "Soubin Shahir", "Fahadh Faasil"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama", "romance"]
-  },
-
-  {
-    id: 68,
-    title: "Super 30",
-    description: "A mathematics teacher creates an educational program that gives disadvantaged students a chance to succeed.",
-    poster: "assets/images/movies/super-30.jpg",
-    backdrop: "assets/images/movies/super-30-backdrop.jpg",
-    year: 2019,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 7.8,
-    director: "Vikas Bahl",
-    cast: ["Hrithik Roshan", "Mrunal Thakur", "Pankaj Tripathi"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 69,
-    title: "Raazi",
-    description: "A young Indian woman is recruited as a spy and sent into Pakistan during a period of political tension.",
-    poster: "assets/images/movies/raazi.jpg",
-    backdrop: "assets/images/movies/raazi-backdrop.jpg",
-    year: 2018,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Action", "Drama"],
-    rating: 7.7,
-    director: "Meghna Gulzar",
-    cast: ["Alia Bhatt", "Vicky Kaushal", "Jaideep Ahlawat"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["action", "drama"]
-  },
-
-  {
-    id: 70,
-    title: "Pink",
-    description: "Three women confront a legal battle that challenges assumptions about consent, freedom, and justice.",
-    poster: "assets/images/movies/pink.jpg",
-    backdrop: "assets/images/movies/pink-backdrop.jpg",
-    year: 2016,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Crime", "Drama"],
-    rating: 8.1,
-    director: "Aniruddha Roy Chowdhury",
-    cast: ["Amitabh Bachchan", "Taapsee Pannu", "Kirti Kulhari"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["crime", "drama"]
-  },
-
-  {
-    id: 71,
-    title: "Neerja",
-    description: "A courageous flight attendant risks her life to protect passengers during a hijacking.",
-    poster: "assets/images/movies/neerja.jpg",
-    backdrop: "assets/images/movies/neerja-backdrop.jpg",
-    year: 2016,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Drama", "Thriller"],
-    rating: 7.6,
-    director: "Ram Madhvani",
-    cast: ["Sonam Kapoor", "Shabana Azmi", "Yogendra Tiku"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama", "thriller"]
-  },
-
-  {
-    id: 72,
-    title: "Shershaah",
-    description: "A soldier's journey is told through his dedication, courage, relationships, and sacrifice.",
-    poster: "assets/images/movies/shershaah.jpg",
-    backdrop: "assets/images/movies/shershaah-backdrop.jpg",
-    year: 2021,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Action", "Drama"],
-    rating: 8.3,
-    director: "Vishnuvardhan",
-    cast: ["Sidharth Malhotra", "Kiara Advani", "Shiv Panditt"],
-    status: ["popular", "latest"],
-    rank: null,
-    keywords: ["action", "drama"]
-  },
-
-  {
-    id: 73,
-    title: "Bhaag Milkha Bhaag",
-    description: "An athlete overcomes personal tragedy and immense challenges to become a celebrated runner.",
-    poster: "assets/images/movies/bhaag-milkha-bhaag.jpg",
-    backdrop: "assets/images/movies/bhaag-milkha-bhaag-backdrop.jpg",
-    year: 2013,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 8.2,
-    director: "Rakeysh Omprakash Mehra",
-    cast: ["Farhan Akhtar", "Sonam Kapoor", "Divya Dutta"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 74,
-    title: "Queen",
-    description: "A young woman takes a solo honeymoon trip and discovers confidence, independence, and herself.",
-    poster: "assets/images/movies/queen.jpg",
-    backdrop: "assets/images/movies/queen-backdrop.jpg",
-    year: 2013,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Comedy", "Drama"],
-    rating: 8.1,
-    director: "Vikas Bahl",
-    cast: ["Kangana Ranaut", "Rajkummar Rao", "Lisa Haydon"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["comedy", "drama"]
-  },
-
-  {
-    id: 75,
-    title: "Barfi!",
-    description: "A charming young man forms deep relationships despite being unable to hear or speak.",
-    poster: "assets/images/movies/barfi.jpg",
-    backdrop: "assets/images/movies/barfi-backdrop.jpg",
-    year: 2012,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Comedy", "Drama", "Romance"],
-    rating: 8.1,
-    director: "Anurag Basu",
-    cast: ["Ranbir Kapoor", "Priyanka Chopra", "Ileana D'Cruz"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["comedy", "drama", "romance"]
-  },
-
-  {
-    id: 76,
-    title: "Zindagi Na Milegi Dobara",
-    description: "Three friends take a road trip that changes their relationships and perspectives on life.",
-    poster: "assets/images/movies/zindagi-na-milegi-dobara.jpg",
-    backdrop: "assets/images/movies/zindagi-na-milegi-dobara-backdrop.jpg",
-    year: 2011,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Comedy", "Drama"],
-    rating: 8.2,
-    director: "Zoya Akhtar",
-    cast: ["Hrithik Roshan", "Farhan Akhtar", "Abhay Deol"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["comedy", "drama"]
-  },
-
-  {
-    id: 77,
-    title: "Rockstar",
-    description: "A talented musician discovers that heartbreak and personal struggle shape his artistic journey.",
-    poster: "assets/images/movies/rockstar.jpg",
-    backdrop: "assets/images/movies/rockstar-backdrop.jpg",
-    year: 2011,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Drama", "Romance"],
-    rating: 7.7,
-    director: "Imtiaz Ali",
-    cast: ["Ranbir Kapoor", "Nargis Fakhri", "Shammi Kapoor"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama", "romance"]
-  },
-
-  {
-    id: 78,
-    title: "Omkara",
-    description: "A political leader's inner circle descends into jealousy, betrayal, and violent rivalry.",
-    poster: "assets/images/movies/omkara.jpg",
-    backdrop: "assets/images/movies/omkara-backdrop.jpg",
-    year: 2006,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Crime", "Drama"],
-    rating: 8.1,
-    director: "Vishal Bhardwaj",
-    cast: ["Ajay Devgn", "Saif Ali Khan", "Kareena Kapoor"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["crime", "drama"]
-  },
-
-  {
-    id: 79,
-    title: "Black",
-    description: "A teacher helps a deaf-blind girl communicate and discover her potential against overwhelming challenges.",
-    poster: "assets/images/movies/black.jpg",
-    backdrop: "assets/images/movies/black-backdrop.jpg",
-    year: 2005,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 8.1,
-    director: "Sanjay Leela Bhansali",
-    cast: ["Amitabh Bachchan", "Rani Mukerji", "Shernaz Patel"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 80,
-    title: "Devdas",
-    description: "A tragic love story unfolds as a man struggles with lost love, family expectations, and self-destruction.",
-    poster: "assets/images/movies/devdas.jpg",
-    backdrop: "assets/images/movies/devdas-backdrop.jpg",
-    year: 2002,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Drama", "Romance"],
-    rating: 7.5,
-    director: "Sanjay Leela Bhansali",
-    cast: ["Shah Rukh Khan", "Aishwarya Rai Bachchan", "Madhuri Dixit"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama", "romance"]
-  },
-
-  {
-    id: 81,
-    title: "Koi... Mil Gaya",
-    description: "A young man with developmental challenges develops an extraordinary connection with an alien visitor.",
-    poster: "assets/images/movies/koi-mil-gaya.jpg",
-    backdrop: "assets/images/movies/koi-mil-gaya-backdrop.jpg",
-    year: 2003,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Sci-Fi", "Drama"],
-    rating: 7.1,
-    director: "Rakesh Roshan",
-    cast: ["Hrithik Roshan", "Preity Zinta", "Rekha"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["sci-fi", "drama"]
-  },
-
-  {
-    id: 82,
-    title: "Company",
-    description: "Two men build a criminal organization whose growing power eventually drives them into conflict.",
-    poster: "assets/images/movies/company.jpg",
-    backdrop: "assets/images/movies/company-backdrop.jpg",
-    year: 2002,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Crime", "Drama"],
-    rating: 8.0,
-    director: "Ram Gopal Varma",
-    cast: ["Ajay Devgn", "Vivek Oberoi", "Manisha Koirala"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["crime", "drama"]
-  },
-
-  {
-    id: 83,
-    title: "Satya",
-    description: "A mysterious newcomer becomes involved with Mumbai's criminal underworld and its dangerous power struggles.",
-    poster: "assets/images/movies/satya.jpg",
-    backdrop: "assets/images/movies/satya-backdrop.jpg",
-    year: 1998,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Crime", "Drama"],
-    rating: 8.2,
-    director: "Ram Gopal Varma",
-    cast: ["Manoj Bajpayee", "Urmila Matondkar", "J. D. Chakravarthy"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["crime", "drama"]
-  },
-
-  {
-    id: 84,
-    title: "Dil Se..",
-    description: "A journalist becomes obsessed with a mysterious woman while caught between love and political conflict.",
-    poster: "assets/images/movies/dil-se.jpg",
-    backdrop: "assets/images/movies/dil-se-backdrop.jpg",
-    year: 1998,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Romance", "Drama"],
-    rating: 7.5,
-    director: "Mani Ratnam",
-    cast: ["Shah Rukh Khan", "Manisha Koirala", "Preity Zinta"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["romance", "drama"]
-  },
-
-  {
-    id: 85,
-    title: "Hum Aapke Hain Koun..!",
-    description: "A family-centered romance explores love, tradition, relationships, and the expectations of marriage.",
-    poster: "assets/images/movies/hum-aapke-hain-koun.jpg",
-    backdrop: "assets/images/movies/hum-aapke-hain-koun-backdrop.jpg",
-    year: 1994,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Romance", "Drama"],
-    rating: 7.5,
-    director: "Sooraj Barjatya",
-    cast: ["Salman Khan", "Madhuri Dixit", "Mohnish Bahl"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["romance", "drama"]
-  },
-
-  {
-    id: 86,
-    title: "Bombay",
-    description: "A couple from different religious backgrounds faces family conflict and social unrest after falling in love.",
-    poster: "assets/images/movies/bombay.jpg",
-    backdrop: "assets/images/movies/bombay-backdrop.jpg",
-    year: 1995,
-    runtime: 120,
-    languages: ["Tamil","Hindi"],
-    country: "India",
-    genre: ["Romance", "Drama"],
-    rating: 8.1,
-    director: "Mani Ratnam",
-    cast: ["Arvind Swamy", "Manisha Koirala", "Tinnu Anand"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["romance", "drama"]
-  },
-
-  {
-    id: 87,
-    title: "Dilwale Dulhania Le Jayenge",
-    description: "Two young Indians living in Europe fall in love while navigating family traditions and expectations.",
-    poster: "assets/images/movies/dilwale-dulhania-le-jayenge.jpg",
-    backdrop: "assets/images/movies/dilwale-dulhania-le-jayenge-backdrop.jpg",
-    year: 1995,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Romance", "Comedy"],
-    rating: 8.0,
-    director: "Aditya Chopra",
-    cast: ["Shah Rukh Khan", "Kajol", "Amrish Puri"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["romance", "comedy"]
-  },
-
-  {
-    id: 88,
-    title: "Baazigar",
-    description: "A man driven by revenge enters a wealthy family and begins a dangerous game of deception.",
-    poster: "assets/images/movies/baazigar.jpg",
-    backdrop: "assets/images/movies/baazigar-backdrop.jpg",
-    year: 1993,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Crime", "Thriller"],
-    rating: 7.6,
-    director: "Abbas-Mustan",
-    cast: ["Shah Rukh Khan", "Kajol", "Shilpa Shetty"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["crime", "thriller"]
-  },
-
-  {
-    id: 89,
-    title: "Agneepath",
-    description: "A man returns years later to avenge his father's murder and confront the criminal responsible.",
-    poster: "assets/images/movies/agneepath.jpg",
-    backdrop: "assets/images/movies/agneepath-backdrop.jpg",
-    year: 1990,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Action", "Crime"],
-    rating: 7.7,
-    director: "Mukul Anand",
-    cast: ["Amitabh Bachchan", "Mithun Chakraborty", "Madhavi"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["action", "crime"]
-  },
-
-  {
-    id: 90,
-    title: "Mr. India",
-    description: "A man discovers an invisibility device and uses it to protect children from a ruthless criminal.",
-    poster: "assets/images/movies/mr-india.jpg",
-    backdrop: "assets/images/movies/mr-india-backdrop.jpg",
-    year: 1987,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Action", "Sci-Fi"],
-    rating: 7.8,
-    director: "Shekhar Kapur",
-    cast: ["Anil Kapoor", "Sridevi", "Amrish Puri"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["action", "sci-fi"]
-  },
-
-  {
-    id: 91,
-    title: "Nayakan",
-    description: "A young man rises through Mumbai's underworld while struggling with morality, family, and power.",
-    poster: "assets/images/movies/nayakan.jpg",
-    backdrop: "assets/images/movies/nayakan-backdrop.jpg",
-    year: 1987,
-    runtime: 120,
-    languages: ["Tamil"],
-    country: "India",
-    genre: ["Crime", "Drama"],
-    rating: 8.6,
-    director: "Mani Ratnam",
-    cast: ["Kamal Haasan", "Saranya Ponvannan", "Karthika"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["crime", "drama"]
-  },
-
-  {
-    id: 92,
-    title: "Pushpaka Vimana",
-    description: "A silent comedy follows a poor man who accidentally discovers an opportunity to change his life.",
-    poster: "assets/images/movies/pushpaka-vimana.jpg",
-    backdrop: "assets/images/movies/pushpaka-vimana-backdrop.jpg",
-    year: 1987,
-    runtime: 120,
-    languages: ["Kannada"],
-    country: "India",
-    genre: ["Comedy"],
-    rating: 8.6,
-    director: "Singeetam Srinivasa Rao",
-    cast: ["Kamal Haasan", "Amala Akkineni", "Tinnu Anand"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["comedy"]
-  },
-
-  {
-    id: 93,
-    title: "Thevar Magan",
-    description: "A man returning home becomes caught between his father's traditional values and his own ambitions.",
-    poster: "assets/images/movies/thevar-magan.jpg",
-    backdrop: "assets/images/movies/thevar-magan-backdrop.jpg",
-    year: 1992,
-    runtime: 120,
-    languages: ["Tamil"],
-    country: "India",
-    genre: ["Drama","Crime"],
-    rating: 8.6,
-    director: "Bharathan",
-    cast: ["Kamal Haasan", "Sivaji Ganesan", "Revathi"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama","crime"]
-  },
-
-  {
-    id: 94,
-    title: "Sagara Sangamam",
-    description: "A talented classical dancer struggles with circumstances that prevent him from achieving his artistic dreams.",
-    poster: "assets/images/movies/sagara-sangamam.jpg",
-    backdrop: "assets/images/movies/sagara-sangamam-backdrop.jpg",
-    year: 1983,
-    runtime: 120,
-    languages: ["Telugu"],
-    country: "India",
-    genre: ["Drama","Romance"],
-    rating: 8.7,
-    director: "K. Viswanath",
-    cast: ["Kamal Haasan", "Jaya Prada", "Sarath Babu"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama","romance"]
-  },
-
-  {
-    id: 95,
-    title: "Maya Bazaar",
-    description: "A legendary mythological comedy brings together family, romance, magic, and elaborate deception.",
-    poster: "assets/images/movies/maya-bazaar.jpg",
-    backdrop: "assets/images/movies/maya-bazaar-backdrop.jpg",
-    year: 1957,
-    runtime: 120,
-    languages: ["Telugu"],
-    country: "India",
-    genre: ["Comedy","Drama"],
-    rating: 9.0,
-    director: "K. V. Reddy",
-    cast: ["N. T. Rama Rao", "S. V. Ranga Rao", "Savitri"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["comedy","drama"]
-  },
-
-  {
-    id: 96,
-    title: "Elippathayam",
-    description: "A man struggles to adapt as the traditional world around him changes and his old way of life disappears.",
-    poster: "assets/images/movies/elippathayam.jpg",
-    backdrop: "assets/images/movies/elippathayam-backdrop.jpg",
-    year: 1981,
-    runtime: 120,
-    languages: ["Malayalam"],
-    country: "India",
-    genre: ["Drama"],
-    rating: 8.3,
-    director: "Adoor Gopalakrishnan",
-    cast: ["Karamana Janardanan Nair", "Sharada", "Jalaja"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["drama"]
-  },
-
-  {
-    id: 97,
-    title: "Thithi",
-    description: "Three generations of men react differently to the death of the family's oldest member.",
-    poster: "assets/images/movies/thithi.jpg",
-    backdrop: "assets/images/movies/thithi-backdrop.jpg",
-    year: 2015,
-    runtime: 120,
-    languages: ["Kannada"],
-    country: "India",
-    genre: ["Comedy","Drama"],
-    rating: 8.1,
-    director: "Raam Reddy",
-    cast: ["Channegowda", "Thammegowda", "Abhishek H. N."],
-    status: ["popular"],
-    rank: null,
-    keywords: ["comedy","drama"]
-  },
-
-  {
-    id: 98,
-    title: "The Lunchbox",
-    description: "A mistaken lunch delivery creates an unexpected friendship between two lonely people in Mumbai.",
-    poster: "assets/images/movies/the-lunchbox.jpg",
-    backdrop: "assets/images/movies/the-lunchbox-backdrop.jpg",
-    year: 2013,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Romance","Drama"],
-    rating: 7.8,
-    director: "Ritesh Batra",
-    cast: ["Irrfan Khan", "Nimrat Kaur", "Nawazuddin Siddiqui"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["romance","drama"]
-  },
-
-  {
-    id: 99,
-    title: "Gangs of Wasseypur",
-    description: "A sprawling crime saga follows generations of rival families locked in a cycle of revenge and power.",
-    poster: "assets/images/movies/gangs-of-wasseypur.jpg",
-    backdrop: "assets/images/movies/gangs-of-wasseypur-backdrop.jpg",
-    year: 2012,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Crime","Drama"],
-    rating: 8.2,
-    director: "Anurag Kashyap",
-    cast: ["Manoj Bajpayee", "Nawazuddin Siddiqui", "Richa Chadda"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["crime","drama"]
-  },
-
-  {
-    id: 100,
-    title: "Black Friday",
-    description: "A detailed crime drama examines the investigation surrounding a series of devastating attacks.",
-    poster: "assets/images/movies/black-friday.jpg",
-    backdrop: "assets/images/movies/black-friday-backdrop.jpg",
-    year: 2004,
-    runtime: 120,
-    languages: ["Hindi"],
-    country: "India",
-    genre: ["Crime","Drama"],
-    rating: 8.4,
-    director: "Anurag Kashyap",
-    cast: ["Kay Kay Menon", "Pavan Malhotra", "Aditya Srivastava"],
-    status: ["popular"],
-    rank: null,
-    keywords: ["crime","drama"]
+    "id": 1,
+    "title": "Dhurandhar",
+    "description": "An intense action thriller built around covert operations and dangerous missions.",
+    "detailedDescription": "An intense action thriller centered on covert operations, dangerous missions, and the people caught in the middle of high-stakes conflicts. The story explores courage, strategy, loyalty, and the risks that come with operating in the shadows.",
+    "poster": "https://image.tmdb.org/t/p/w500/snBOuXDdhmTvlzMUvP9Em3Pp1u1.jpg",
+    "backdrop": "assets/images/movies/dhurandhar-backdrop.jpg",
+    "year": 2025,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Action",
+      "Thriller"
+    ],
+    "rating": 8.3,
+    "director": "Aditya Dhar",
+    "cast": [
+      "Ranveer Singh",
+      "Akshaye Khanna",
+      "Sanjay Dutt"
+    ],
+    "status": [
+      "popular",
+      "trending",
+      "latest"
+    ],
+    "rank": 1,
+    "keywords": [
+      "action",
+      "thriller"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "12th Fail",
+    "description": "A determined young man overcomes setbacks while chasing an ambitious civil-service dream.",
+    "detailedDescription": "A determined young man refuses to let failure define his future as he pursues the demanding path toward a civil-service career. Along the way, he faces financial struggles, uncertainty, pressure, and repeated setbacks while learning the value of persistence and self-belief.",
+    "poster": "https://image.tmdb.org/t/p/w500/eebUPRI4Z5e1Z7Hev4JZAwMIFkX.jpg",
+    "backdrop": "assets/images/movies/12th-fail-backdrop.jpg",
+    "year": 2023,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 8.8,
+    "director": "Vidhu Vinod Chopra",
+    "cast": [
+      "Vikrant Massey",
+      "Medha Shankr",
+      "Anant V Joshi"
+    ],
+    "status": [
+      "popular",
+      "latest",
+      "trending"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Jawan",
+    "description": "A high-energy action story driven by justice, identity, and a larger social mission.",
+    "detailedDescription": "A high-energy action story that combines personal identity with a larger mission for justice. As hidden motivations and difficult choices come to the surface, the characters are pushed into a confrontation involving power, responsibility, and social change.",
+    "poster": "https://image.tmdb.org/t/p/w500/jFt1gS4BGHlK8xt76Y81Alp4dbt.jpg",
+    "backdrop": "assets/images/movies/jawan-backdrop.jpg",
+    "year": 2023,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Action",
+      "Thriller"
+    ],
+    "rating": 7.6,
+    "director": "Atlee",
+    "cast": [
+      "Shah Rukh Khan",
+      "Nayanthara",
+      "Vijay Sethupathi"
+    ],
+    "status": [
+      "trending",
+      "latest"
+    ],
+    "rank": 3,
+    "keywords": [
+      "action",
+      "thriller"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Dangal",
+    "description": "A father trains his daughters to compete at the highest level despite social resistance.",
+    "detailedDescription": "A determined father trains his daughters to pursue competitive wrestling despite resistance from society and the expectations surrounding them. Their journey explores discipline, sacrifice, family relationships, ambition, and the determination required to challenge established expectations.",
+    "poster": "https://image.tmdb.org/t/p/w500/cJRPOLEexI7qp2DKtFfCh7YaaUG.jpg",
+    "backdrop": "assets/images/movies/dangal-backdrop.jpg",
+    "year": 2016,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 8.3,
+    "director": "Nitesh Tiwari",
+    "cast": [
+      "Aamir Khan",
+      "Fatima Sana Shaikh",
+      "Sanya Malhotra"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "3 Idiots",
+    "description": "Three college friends navigate friendship, pressure, ambition, and the meaning of success.",
+    "detailedDescription": "Three college friends form a close bond while navigating academic pressure, expectations, friendship, and their own ambitions. Their experiences question conventional ideas of success and highlight the importance of curiosity, individuality, and staying true to oneself.",
+    "poster": "https://image.tmdb.org/t/p/w500/66A9MqXOyVFCssoloscw79z8Tew.jpg",
+    "backdrop": "assets/images/movies/3-idiots-backdrop.jpg",
+    "year": 2009,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "rating": 8.4,
+    "director": "Rajkumar Hirani",
+    "cast": [
+      "Aamir Khan",
+      "R. Madhavan",
+      "Sharman Joshi"
+    ],
+    "status": [
+      "trending",
+      " popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "drama"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Lagaan",
+    "description": "Villagers challenge a powerful colonial system through an extraordinary cricket match.",
+    "detailedDescription": "A group of villagers faces an overwhelming challenge when they are forced to stake their future on an extraordinary cricket match. What begins as an impossible contest becomes a story about unity, courage, leadership, and resistance against an oppressive system.",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9KIN0EYPpGmK_g8sFmzPBc5HO34aJHDzE7IbiluCyF8wRUSJe7GxMsWUW&s=10",
+    "backdrop": "assets/images/movies/lagaan-backdrop.jpg",
+    "year": 2001,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 8.1,
+    "director": "Ashutosh Gowariker",
+    "cast": [
+      "Aamir Khan",
+      "Gracy Singh",
+      "Rachel Shelley"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Taare Zameen Par",
+    "description": "A child struggling at school finds a teacher who understands his unique way of seeing the world.",
+    "detailedDescription": "A child who struggles to fit into conventional academic expectations begins to lose confidence in himself. A compassionate teacher recognizes his individuality and helps him discover his abilities, creating a moving story about understanding, creativity, education, and acceptance.",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoIFyKAL4ldG54LGrepUXMraXASXkEmk4b79Uv_tPy35dtC1fmCTz3VBAfC9wR-ZugQjiB&s=10",
+    "backdrop": "assets/images/movies/taare-zameen-par-backdrop.jpg",
+    "year": 2007,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 8.3,
+    "director": "Aamir Khan",
+    "cast": [
+      "Darsheel Safary",
+      "Aamir Khan",
+      "Tisca Chopra"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Sholay",
+    "description": "Two criminals are hired to help a former police officer take on a ruthless outlaw.",
+    "detailedDescription": "Two unlikely allies are brought together when a former police officer seeks their help against a ruthless outlaw. Their dangerous mission develops into a story of friendship, revenge, courage, loyalty, and sacrifice.",
+    "poster": "https://image.tmdb.org/t/p/w500/ya9bwgqA4eNl5bQ9QqS0jcmRoBS.jpg",
+    "backdrop": "assets/images/movies/sholay-backdrop.jpg",
+    "year": 1975,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Action",
+      "Crime"
+    ],
+    "rating": 8.1,
+    "director": "Ramesh Sippy",
+    "cast": [
+      "Amitabh Bachchan",
+      "Dharmendra",
+      "Hema Malini"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "action",
+      "crime"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Andhadhun",
+    "description": "A pianist becomes entangled in a dangerous murder mystery where appearances are deceptive.",
+    "detailedDescription": "A pianist becomes caught in a dangerous chain of events after becoming connected to a mysterious murder. As appearances repeatedly prove unreliable, the story unfolds through deception, uncertainty, dark humor, and unexpected twists.",
+    "poster": "https://image.tmdb.org/t/p/w500/dy3K6hNvwE05siGgiLJcEiwgpdO.jpg",
+    "backdrop": "assets/images/movies/andhadhun-backdrop.jpg",
+    "year": 2018,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Crime",
+      "Thriller"
+    ],
+    "rating": 8.2,
+    "director": "Sriram Raghavan",
+    "cast": [
+      "Ayushmann Khurrana",
+      "Tabu",
+      "Radhika Apte"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "crime",
+      "thriller"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Kahaani",
+    "description": "A pregnant woman searches Kolkata for her missing husband while uncovering a larger conspiracy.",
+    "detailedDescription": "A pregnant woman arrives in Kolkata determined to find her missing husband. Her search gradually leads her into a much larger and more dangerous mystery, forcing her to question the people she meets and the truth behind her husband's disappearance.",
+    "poster": "https://image.tmdb.org/t/p/w500/e2eQVOrdQ8k7yYjjHKHP2nlwbTu.jpg",
+    "backdrop": "assets/images/movies/kahaani-backdrop.jpg",
+    "year": 2012,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Crime",
+      "Thriller"
+    ],
+    "rating": 8.1,
+    "director": "Sujoy Ghosh",
+    "cast": [
+      "Vidya Balan",
+      "Parambrata Chatterjee",
+      "Nawazuddin Siddiqui"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "crime",
+      "thriller"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Hellaro",
+    "description": "Hellaro follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
+    "detailedDescription": "Hellaro follows its characters through a powerful journey shaped by conflict, relationships, ambition, and difficult choices. The story explores how individuals respond to restrictive circumstances while finding strength through connection, courage, and self-expression.",
+    "poster": "https://image.tmdb.org/t/p/w500/b1rnAdQe2wxnBMqYhhvC34O3lLC.jpg",
+    "backdrop": "assets/images/movies/hellaro-backdrop.jpg",
+    "year": 2019,
+    "runtime": 120,
+    "languages": [
+      "Gujarati"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 8.6,
+    "director": "Abhishek Shah",
+    "cast": [
+      "Actor 1",
+      "Actor 2",
+      "Actor 3"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Chhello Show",
+    "description": "Chhello Show follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
+    "detailedDescription": "Chhello Show follows its characters through a personal journey shaped by relationships, ambition, discovery, and difficult choices. The story explores the emotional impact of pursuing something deeply meaningful while growing through changing circumstances.",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWHdt0dTRdj8lsyqgn-g0Qp1uc0MiuOv1FWSe229B2odFykVnJ87nhaT7a&s=10",
+    "backdrop": "assets/images/movies/chhello-show-backdrop.jpg",
+    "year": 2021,
+    "runtime": 120,
+    "languages": [
+      "Gujarati"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 7.8,
+    "director": "Pan Nalin",
+    "cast": [
+      "Actor 1",
+      "Actor 2",
+      "Actor 3"
+    ],
+    "status": [
+      "latest"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Reva",
+    "description": "Reva follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
+    "detailedDescription": "Reva follows its characters through a story shaped by personal conflict, relationships, ambition, and difficult decisions. The journey examines how experiences can challenge a person's perspective and lead them toward greater understanding and change.",
+    "poster": "https://image.tmdb.org/t/p/w500/lkfpAetm8rs38t6k16gxgeYbQPG.jpg",
+    "backdrop": "assets/images/movies/reva-backdrop.jpg",
+    "year": 2018,
+    "runtime": 120,
+    "languages": [
+      "Gujarati"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 7.4,
+    "director": "Rahul Bhole",
+    "cast": [
+      "Actor 1",
+      "Actor 2",
+      "Actor 3"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Jai Bhim",
+    "description": "Jai Bhim follows its characters through a memorable story shaped by conflict, relationships, ambition, and difficult choices.",
+    "detailedDescription": "Jai Bhim follows a serious journey shaped by injustice, conflict, relationships, and difficult choices. The story focuses on the struggle to seek truth and justice while confronting systems that make that pursuit difficult.",
+    "poster": "https://image.tmdb.org/t/p/w500/ehybiOtBUtrMkmtB39zQEtq1Jie.jpg",
+    "backdrop": "assets/images/movies/jai-bhim-backdrop.jpg",
+    "year": 2021,
+    "runtime": 120,
+    "languages": [
+      "Tamil"
+    ],
+    "country": "India",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "rating": 8.7,
+    "director": "T. J. Gnanavel",
+    "cast": [
+      "Suriya",
+      "Lijomol Jose",
+      "Manikandan"
+    ],
+    "status": [
+      "popular",
+      "latest"
+    ],
+    "rank": null,
+    "keywords": [
+      "crime",
+      "drama"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Super 30",
+    "description": "A teacher creates an unconventional program to help talented students pursue their dreams.",
+    "detailedDescription": "A determined teacher creates an unconventional educational program for talented students who face difficult circumstances. The story follows their preparation, struggles, and shared determination as they work toward opportunities that once seemed out of reach.",
+    "poster": "https://image.tmdb.org/t/p/w500/n0LdZvEqZjnSQSHzzwryFBYjXk1.jpg",
+    "backdrop": "assets/images/movies/super-30-backdrop.jpg",
+    "year": 2019,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 7.9,
+    "director": "Vikas Bahl",
+    "cast": [
+      "Hrithik Roshan",
+      "Mrunal Thakur",
+      "Pankaj Tripathi"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Article 15",
+    "description": "A police officer confronts discrimination and injustice while investigating a disturbing case.",
+    "detailedDescription": "A police officer begins investigating a disturbing case and gradually confronts the deeper social inequalities surrounding it. His investigation forces him to question established attitudes and confront the difficult relationship between law, prejudice, and justice.",
+    "poster": "https://image.tmdb.org/t/p/w500/puyn1J1NOTG7P2dYxpOIl1583yf.jpg",
+    "backdrop": "assets/images/movies/article-15-backdrop.jpg",
+    "year": 2019,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "rating": 8.1,
+    "director": "Anubhav Sinha",
+    "cast": [
+      "Ayushmann Khurrana",
+      "Isha Talwar",
+      "Manoj Pahwa"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "crime",
+      "drama"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Drishyam",
+    "description": "A family man goes to extraordinary lengths to protect his family after a shocking incident.",
+    "detailedDescription": "A seemingly ordinary family is thrown into an extraordinary situation after a shocking incident changes everything. The father uses careful planning and determination to protect the people he loves while trying to stay ahead of an investigation.",
+    "poster": "https://image.tmdb.org/t/p/w500/bniZOGixNbYclobRpqkPK7dMBgP.jpg",
+    "backdrop": "assets/images/movies/drishyam-backdrop.jpg",
+    "year": 2015,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Crime",
+      "Thriller"
+    ],
+    "rating": 8.2,
+    "director": "Nishikant Kamat",
+    "cast": [
+      "Ajay Devgn",
+      "Shriya Saran",
+      "Tabu"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "crime",
+      "thriller"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Drishyam 2",
+    "description": "Years after a traumatic event, a family faces renewed pressure when the past resurfaces.",
+    "detailedDescription": "Years after a traumatic incident, a family attempts to maintain the life they have built while living with the consequences of the past. When old questions return, they are forced to confront new pressure and find ways to protect their carefully constructed story.",
+    "poster": "https://image.tmdb.org/t/p/w500/wk8Vu0DI0MiNLaXXiVqAwjLRKL5.jpg",
+    "backdrop": "assets/images/movies/drishyam-2-backdrop.jpg",
+    "year": 2022,
+    "runtime": 140,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Crime",
+      "Thriller"
+    ],
+    "rating": 8.2,
+    "director": "Abhishek Pathak",
+    "cast": [
+      "Ajay Devgn",
+      "Shriya Saran",
+      "Tabu"
+    ],
+    "status": [
+      "popular",
+      "latest"
+    ],
+    "rank": null,
+    "keywords": [
+      "crime",
+      "thriller"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Queen",
+    "description": "A young woman takes an unexpected journey of independence after her life plans suddenly change.",
+    "detailedDescription": "After an unexpected change turns her life upside down, a young woman decides to take a journey on her own. The experience becomes an opportunity to discover independence, confidence, friendship, and a new understanding of herself.",
+    "poster": "https://image.tmdb.org/t/p/w500/vKLp0X2RQOuA31R3AdaYtDdKIPK.jpg",
+    "backdrop": "assets/images/movies/queen-backdrop.jpg",
+    "year": 2014,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "rating": 8.1,
+    "director": "Vikas Bahl",
+    "cast": [
+      "Kangana Ranaut",
+      "Rajkummar Rao",
+      "Lisa Haydon"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "drama"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Zindagi Na Milegi Dobara",
+    "description": "Three friends take a life-changing road trip that challenges their fears and strengthens their bond.",
+    "detailedDescription": "Three close friends embark on a long-awaited road trip that becomes an opportunity to confront fears, unresolved feelings, and different ideas about life. Their journey brings new experiences while strengthening their friendship and changing the way they see themselves and each other.",
+    "poster": "https://image.tmdb.org/t/p/w500/hKO9O715wYxjkQSEv47giCYcyO8.jpg",
+    "backdrop": "assets/images/movies/zindagi-na-milegi-dobara-backdrop.jpg",
+    "year": 2011,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "rating": 8.2,
+    "director": "Zoya Akhtar",
+    "cast": [
+      "Hrithik Roshan",
+      "Farhan Akhtar",
+      "Abhay Deol"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "drama"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Barfi!",
+    "description": "A warm-hearted story about friendship, love, and finding happiness in unexpected places.",
+    "detailedDescription": "A warm-hearted story about friendship and love that follows people who experience life differently from those around them. Through moments of humor, emotion, and misunderstanding, the characters discover that happiness and connection can be found in unexpected places.",
+    "poster": "https://image.tmdb.org/t/p/w500/5cJIx2zKjDoUtPSliou23xsReb1.jpg",
+    "backdrop": "assets/images/movies/barfi-backdrop.jpg",
+    "year": 2012,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "rating": 8.1,
+    "director": "Anurag Basu",
+    "cast": [
+      "Ranbir Kapoor",
+      "Priyanka Chopra",
+      "Ileana D'Cruz"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "drama"
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Rockstar",
+    "description": "An aspiring musician pursues fame while struggling with love, identity, and personal sacrifice.",
+    "detailedDescription": "An aspiring musician becomes increasingly consumed by his desire to create meaningful music and achieve recognition. His rise brings success and emotional intensity, but it also forces him to confront love, identity, loneliness, and the personal cost of ambition.",
+    "poster": "https://image.tmdb.org/t/p/w500/cJZC9riwrdATBUonkZJZD6y9g40.jpg",
+    "backdrop": "assets/images/movies/rockstar-backdrop.jpg",
+    "year": 2011,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama",
+      "Music"
+    ],
+    "rating": 7.7,
+    "director": "Imtiaz Ali",
+    "cast": [
+      "Ranbir Kapoor",
+      "Nargis Fakhri",
+      "Shammi Kapoor"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama",
+      "music"
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Tamasha",
+    "description": "A man questions the life he is living and begins searching for his authentic self.",
+    "detailedDescription": "A man living according to expectations begins questioning whether the life around him truly represents who he is. Through relationships, memories, and self-discovery, he begins searching for the courage to express his real identity.",
+    "poster": "https://image.tmdb.org/t/p/w500/8Ktf15qGVFYQ6CdBtBgCDM96UMC.jpg",
+    "backdrop": "assets/images/movies/tamasha-backdrop.jpg",
+    "year": 2015,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "rating": 7.3,
+    "director": "Imtiaz Ali",
+    "cast": [
+      "Ranbir Kapoor",
+      "Deepika Padukone",
+      "Piyush Mishra"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama",
+      "romance"
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Swades",
+    "description": "An Indian scientist returns home and becomes involved in improving the lives of people in his community.",
+    "detailedDescription": "An accomplished scientist living abroad returns to India and reconnects with the people and community he left behind. His experiences gradually lead him to reconsider his priorities and become involved in solving practical problems around him.",
+    "poster": "https://image.tmdb.org/t/p/w500/yUSL24kpHc9Nls4Pohia4shgcIM.jpg",
+    "backdrop": "assets/images/movies/swades-backdrop.jpg",
+    "year": 2004,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 8.2,
+    "director": "Ashutosh Gowariker",
+    "cast": [
+      "Shah Rukh Khan",
+      "Gayatri Joshi",
+      "Kishori Ballal"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Rang De Basanti",
+    "description": "A group of friends is transformed when a film project forces them to confront their country's history and present.",
+    "detailedDescription": "A group of friends initially focused on their own lives becomes increasingly aware of larger questions about history, responsibility, and society. A filmmaking project changes their perspective and eventually pushes them to take difficult decisions about what they believe is right.",
+    "poster": "https://image.tmdb.org/t/p/w500/f1bF8CHzEu621bPSIg6XiUNAabh.jpg",
+    "backdrop": "assets/images/movies/rang-de-basanti-backdrop.jpg",
+    "year": 2006,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 8.1,
+    "director": "Rakeysh Omprakash Mehra",
+    "cast": [
+      "Aamir Khan",
+      "Siddharth",
+      "Kunal Kapoor"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Gully Boy",
+    "description": "A young man from Mumbai discovers his voice through rap and fights to build a career in music.",
+    "detailedDescription": "A young man from Mumbai discovers that rap gives him a way to express his experiences, frustrations, and ambitions. As he tries to build a career in music, he must balance family expectations, relationships, financial limitations, and his growing confidence.",
+    "poster": "https://image.tmdb.org/t/p/w500/4RE7TD5TqEXbPKyUHcn7CSeMlrJ.jpg",
+    "backdrop": "assets/images/movies/gully-boy-backdrop.jpg",
+    "year": 2019,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama",
+      "Music"
+    ],
+    "rating": 7.9,
+    "director": "Zoya Akhtar",
+    "cast": [
+      "Ranveer Singh",
+      "Alia Bhatt",
+      "Siddhant Chaturvedi"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama",
+      "music"
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Masaan",
+    "description": "Several lives intersect in Varanasi as characters deal with loss, love, guilt, and social expectations.",
+    "detailedDescription": "Several lives intersect in Varanasi as different characters struggle with grief, love, guilt, and the weight of social expectations. Their separate journeys reveal how people attempt to move forward after painful experiences and find hope in difficult circumstances.",
+    "poster": "https://image.tmdb.org/t/p/w500/wgcPR6Weth2yJDo5wBdNqW2TD6J.jpg",
+    "backdrop": "assets/images/movies/masaan-backdrop.jpg",
+    "year": 2015,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 8.1,
+    "director": "Neeraj Ghaywan",
+    "cast": [
+      "Vicky Kaushal",
+      "Richa Chadda",
+      "Sanjay Mishra"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Piku",
+    "description": "A woman balancing work and independence struggles with her demanding relationship with her aging father.",
+    "detailedDescription": "A fiercely independent woman tries to balance her professional life, personal freedom, and complicated relationship with her aging father. Their journey together becomes a humorous and emotional exploration of family, responsibility, independence, and everyday relationships.",
+    "poster": "https://image.tmdb.org/t/p/w500/yo7EZWiLpLGhqs3YnlDGDBPjfTb.jpg",
+    "backdrop": "assets/images/movies/piku-backdrop.jpg",
+    "year": 2015,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "rating": 7.6,
+    "director": "Shoojit Sircar",
+    "cast": [
+      "Deepika Padukone",
+      "Amitabh Bachchan",
+      "Irrfan Khan"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "drama"
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Kahaani 2",
+    "description": "A mysterious woman becomes the center of an investigation as her hidden past begins to emerge.",
+    "detailedDescription": "A mysterious woman becomes the focus of an investigation when circumstances expose pieces of a complicated past. As the truth gradually emerges, the story explores identity, fear, survival, and the consequences of choices made under difficult circumstances.",
+    "poster": "https://image.tmdb.org/t/p/w500/7JCbW4oEnGWfX1qkhLnrVdpmFVw.jpg",
+    "backdrop": "assets/images/movies/kahaani-2-backdrop.jpg",
+    "year": 2016,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Crime",
+      "Thriller"
+    ],
+    "rating": 6.6,
+    "director": "Sujoy Ghosh",
+    "cast": [
+      "Vidya Balan",
+      "Arjun Rampal",
+      "Jugal Hansraj"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "crime",
+      "thriller"
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Tumbbad",
+    "description": "A dark fantasy unfolds around greed, an ancient secret, and a terrifying supernatural force.",
+    "detailedDescription": "A dark fantasy story built around an ancient secret and the destructive consequences of unchecked greed. As the characters pursue wealth and power, they encounter a supernatural force that turns their desires into a dangerous struggle for survival.",
+    "poster": "https://image.tmdb.org/t/p/w500/vzjZAKozbDplHWcQXbXo0APKxst.jpg",
+    "backdrop": "assets/images/movies/tumbbad-backdrop.jpg",
+    "year": 2018,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Fantasy",
+      "Horror"
+    ],
+    "rating": 8.2,
+    "director": "Rahi Anil Barve",
+    "cast": [
+      "Sohum Shah",
+      "Jyoti Malshe",
+      "Anita Date"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "fantasy",
+      "horror"
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Stree",
+    "description": "A small town is haunted by a mysterious woman whose presence becomes the subject of local legend.",
+    "detailedDescription": "A small town becomes unsettled by the presence of a mysterious woman surrounded by local stories and superstition. A group of friends attempts to understand what is happening while the story combines supernatural mystery, humor, fear, and social commentary.",
+    "poster": "https://image.tmdb.org/t/p/w500/euhgW6hpDYw7nxFDjqHn0eKvQPX.jpg",
+    "backdrop": "assets/images/movies/stree-backdrop.jpg",
+    "year": 2018,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Horror"
+    ],
+    "rating": 7.5,
+    "director": "Amar Kaushik",
+    "cast": [
+      "Rajkummar Rao",
+      "Shraddha Kapoor",
+      "Pankaj Tripathi"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "horror"
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Bhediya",
+    "description": "A man begins experiencing strange changes after an encounter with a mysterious creature in the forest.",
+    "detailedDescription": "A man experiences mysterious physical and behavioral changes after a strange encounter in the forest. As he tries to understand what is happening to him, the story mixes supernatural elements with humor, friendship, and questions about humanity and nature.",
+    "poster": "https://image.tmdb.org/t/p/w500/iZtq44ZmxBW0E3tAeLG6UdJe9aj.jpg",
+    "backdrop": "assets/images/movies/bhediya-backdrop.jpg",
+    "year": 2022,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Horror"
+    ],
+    "rating": 6.7,
+    "director": "Amar Kaushik",
+    "cast": [
+      "Varun Dhawan",
+      "Kriti Sanon",
+      "Abhishek Banerjee"
+    ],
+    "status": [
+      "latest"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "horror"
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Bhool Bhulaiyaa",
+    "description": "A family returns to an ancestral home where strange events lead to questions about a mysterious spirit.",
+    "detailedDescription": "A family returns to an old ancestral home where unusual events begin creating fear and confusion. As the mystery develops, the characters are forced to question whether the strange happenings have a supernatural explanation or something more complicated lies behind them.",
+    "poster": "https://image.tmdb.org/t/p/w500/soRW3p4GlPphHiFkwbqYGrodQ5S.jpg",
+    "backdrop": "assets/images/movies/bhool-bhulaiyaa-backdrop.jpg",
+    "year": 2007,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Horror"
+    ],
+    "rating": 7.3,
+    "director": "Priyadarshan",
+    "cast": [
+      "Akshay Kumar",
+      "Vidya Balan",
+      "Shiney Ahuja"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "horror"
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Bhool Bhulaiyaa 2",
+    "description": "A man claiming to communicate with a spirit becomes involved with a troubled family and a haunted mansion.",
+    "detailedDescription": "A man who claims to understand supernatural phenomena becomes involved with a family dealing with strange events in an old mansion. As the mystery deepens, humor and suspense combine while the characters attempt to uncover what is really happening.",
+    "poster": "https://image.tmdb.org/t/p/w500/fw0oMHiMt9qOuKEJEmzFiCNAnXc.jpg",
+    "backdrop": "assets/images/movies/bhool-bhulaiyaa-2-backdrop.jpg",
+    "year": 2022,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Horror"
+    ],
+    "rating": 5.7,
+    "director": "Anees Bazmee",
+    "cast": [
+      "Kartik Aaryan",
+      "Kiara Advani",
+      "Tabu"
+    ],
+    "status": [
+      "popular",
+      "latest"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "horror"
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Munna Bhai M.B.B.S.",
+    "description": "A street-smart man enters medical school in an unusual attempt to fulfill his father's expectations.",
+    "detailedDescription": "A street-smart man enters the world of medicine through an unconventional path while trying to prove himself to his father. His experiences challenge the rigid expectations surrounding him and reveal the importance of empathy, kindness, and genuine care for others.",
+    "poster": "https://image.tmdb.org/t/p/w500/OjJ2eZFMr0InHxjYCQXwxDoo4v.jpg",
+    "backdrop": "assets/images/movies/munna-bhai-mbbs-backdrop.jpg",
+    "year": 2003,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "rating": 8.1,
+    "director": "Rajkumar Hirani",
+    "cast": [
+      "Sanjay Dutt",
+      "Arshad Warsi",
+      "Boman Irani"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "drama"
+    ]
+  },
+  {
+    "id": 36,
+    "title": "PK",
+    "description": "An unusual visitor questions human beliefs and customs while searching for answers about his own existence.",
+    "detailedDescription": "An unusual outsider observes human society with fresh eyes and begins questioning beliefs, traditions, and assumptions that others take for granted. His search for answers becomes a humorous and thoughtful exploration of faith, identity, communication, and humanity.",
+    "poster": "https://image.tmdb.org/t/p/w500/z2x2Y4tncefsIU7h82gmUM5vnBJ.jpg",
+    "backdrop": "assets/images/movies/pk-backdrop.jpg",
+    "year": 2014,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "rating": 8.1,
+    "director": "Rajkumar Hirani",
+    "cast": [
+      "Aamir Khan",
+      "Anushka Sharma",
+      "Sushant Singh Rajput"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "drama"
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Dil Chahta Hai",
+    "description": "Three close friends experience changing relationships and different ideas about adulthood and life.",
+    "detailedDescription": "Three close friends find their lives changing as they grow older and begin pursuing different goals. Their relationships, romances, disagreements, and shared experiences explore the challenges of adulthood and the lasting strength of friendship.",
+    "poster": "https://image.tmdb.org/t/p/w500/c6Cicaf2FFmfcInfsbPTxMLk5CS.jpg",
+    "backdrop": "assets/images/movies/dil-chahta-hai-backdrop.jpg",
+    "year": 2001,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "rating": 8.1,
+    "director": "Farhan Akhtar",
+    "cast": [
+      "Aamir Khan",
+      "Saif Ali Khan",
+      "Akshaye Khanna"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "drama"
+    ]
+  },
+  {
+    "id": 38,
+    "title": "Wake Up Sid",
+    "description": "A carefree young man begins discovering his purpose after leaving behind a comfortable routine.",
+    "detailedDescription": "A carefree young man who has never taken his future seriously begins questioning what he actually wants from life. As he steps outside his comfortable routine, he discovers responsibility, independence, creativity, and a clearer sense of purpose.",
+    "poster": "https://image.tmdb.org/t/p/w500/1UpgW67W6Do0xizTuE26bMQFLdL.jpg",
+    "backdrop": "assets/images/movies/wake-up-sid-backdrop.jpg",
+    "year": 2009,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "rating": 7.6,
+    "director": "Ayan Mukerji",
+    "cast": [
+      "Ranbir Kapoor",
+      "Konkona Sen Sharma",
+      "Supriya Pathak"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "drama"
+    ]
+  },
+  {
+    "id": 39,
+    "title": "Yeh Jawaani Hai Deewani",
+    "description": "Four friends navigate love, ambition, travel, and changing relationships as they grow older.",
+    "detailedDescription": "Four friends experience different stages of life while navigating ambition, romance, travel, and changing priorities. Their relationships evolve as they grow older, forcing them to consider what they truly value and what they are willing to leave behind.",
+    "poster": "https://image.tmdb.org/t/p/w500/em39H81XLCDgXsI7V4IcBZseEO6.jpg",
+    "backdrop": "assets/images/movies/yeh-jawaani-hai-deewani-backdrop.jpg",
+    "year": 2013,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "rating": 7.2,
+    "director": "Ayan Mukerji",
+    "cast": [
+      "Ranbir Kapoor",
+      "Deepika Padukone",
+      "Aditya Roy Kapur"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama",
+      "romance"
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Jab We Met",
+    "description": "A quiet man meets an energetic woman whose personality changes the direction of both their lives.",
+    "detailedDescription": "A reserved man unexpectedly meets a highly energetic woman whose confidence and spontaneity disrupt his carefully controlled life. Their journey together gradually becomes a story about love, self-discovery, confidence, and finding the courage to choose one's own path.",
+    "poster": "https://image.tmdb.org/t/p/w500/iqiH6vnoEgjAypKsuIScN7JlE2j.jpg",
+    "backdrop": "assets/images/movies/jab-we-met-backdrop.jpg",
+    "year": 2007,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Romance"
+    ],
+    "rating": 7.9,
+    "director": "Imtiaz Ali",
+    "cast": [
+      "Shahid Kapoor",
+      "Kareena Kapoor",
+      "Tarun Arora"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "romance"
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Om Shanti Om",
+    "description": "A young actor's life takes a dramatic turn involving love, betrayal, reincarnation, and the film industry.",
+    "detailedDescription": "A young actor's dreams of success and love are disrupted by betrayal and tragedy. Years later, a new chapter begins as memories and unfinished emotions return, creating a story filled with romance, ambition, revenge, and the spectacle of cinema.",
+    "poster": "https://image.tmdb.org/t/p/w500/oArsQTD4bPPMtRjqr03SO9W6phF.jpg",
+    "backdrop": "assets/images/movies/om-shanti-om-backdrop.jpg",
+    "year": 2007,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "rating": 6.7,
+    "director": "Farah Khan",
+    "cast": [
+      "Shah Rukh Khan",
+      "Deepika Padukone",
+      "Arjun Rampal"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama",
+      "romance"
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Kal Ho Naa Ho",
+    "description": "A woman discovers unexpected love while the people around her face difficult emotional choices.",
+    "detailedDescription": "A woman's ordinary life changes when a charismatic new person enters her world and brings energy and optimism into her relationships. Beneath the humor and romance, the characters face difficult emotional choices and learn to appreciate the time they have together.",
+    "poster": "https://image.tmdb.org/t/p/w500/zhMI6I0kSLnewTMwE0A8Tz3Cj2f.jpg",
+    "backdrop": "assets/images/movies/kal-ho-naa-ho-backdrop.jpg",
+    "year": 2003,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "rating": 7.9,
+    "director": "Nikkhil Advani",
+    "cast": [
+      "Shah Rukh Khan",
+      "Preity Zinta",
+      "Saif Ali Khan"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama",
+      "romance"
+    ]
+  },
+  {
+    "id": 43,
+    "title": "Veer-Zaara",
+    "description": "A cross-border love story is tested by separation, sacrifice, and circumstances beyond the characters' control.",
+    "detailedDescription": "A powerful love story develops between two people whose lives are separated by borders and circumstances beyond their control. Their relationship becomes a story of sacrifice, patience, loyalty, and the enduring strength of love across years of separation.",
+    "poster": "https://image.tmdb.org/t/p/w500/j267YqLvKAHeyykTflxzpgVgviQ.jpg",
+    "backdrop": "assets/images/movies/veer-zaara-backdrop.jpg",
+    "year": 2004,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "rating": 7.8,
+    "director": "Yash Chopra",
+    "cast": [
+      "Shah Rukh Khan",
+      "Preity Zinta",
+      "Rani Mukerji"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama",
+      "romance"
+    ]
+  },
+  {
+    "id": 44,
+    "title": "Rocky Aur Rani Kii Prem Kahaani",
+    "description": "Two very different people fall in love and challenge their families to accept their relationship.",
+    "detailedDescription": "Two people from very different family backgrounds fall in love and decide to challenge the expectations surrounding their relationship. Their attempt to bring their families together becomes a colorful exploration of tradition, identity, acceptance, and love.",
+    "poster": "https://image.tmdb.org/t/p/w500/vTQIqlxUkOuyf2UKhlM2OUaFGKz.jpg",
+    "backdrop": "assets/images/movies/rocky-aur-rani-kii-prem-kahaani-backdrop.jpg",
+    "year": 2023,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Romance"
+    ],
+    "rating": 6.8,
+    "director": "Karan Johar",
+    "cast": [
+      "Ranveer Singh",
+      "Alia Bhatt",
+      "Dharmendra"
+    ],
+    "status": [
+      "latest",
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "romance"
+    ]
+  },
+  {
+    "id": 45,
+    "title": "Bajrangi Bhaijaan",
+    "description": "A kind-hearted man helps a lost child return home despite overwhelming obstacles.",
+    "detailedDescription": "A kind-hearted man takes responsibility for helping a lost child return to her family despite language, distance, and other obstacles. His journey becomes an emotional story about compassion, trust, friendship, and the ability of ordinary people to cross boundaries for someone in need.",
+    "poster": "https://image.tmdb.org/t/p/w500/vhlliI7HZZlWfo5d6CiyfBAGLrW.jpg",
+    "backdrop": "assets/images/movies/bajrangi-bhaijaan-backdrop.jpg",
+    "year": 2015,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 8.1,
+    "director": "Kabir Khan",
+    "cast": [
+      "Salman Khan",
+      "Harshaali Malhotra",
+      "Kareena Kapoor"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 46,
+    "title": "Sultan",
+    "description": "A former wrestling champion attempts to rebuild his life and return to the sport he once dominated.",
+    "detailedDescription": "A former wrestling champion must confront his past and rebuild himself after personal and professional setbacks. His attempt to return to the sport becomes a demanding journey of discipline, redemption, determination, and personal growth.",
+    "poster": "https://image.tmdb.org/t/p/w500/oarT8LL2XE0aPU9kXqrD249Z4rM.jpg",
+    "backdrop": "assets/images/movies/sultan-backdrop.jpg",
+    "year": 2016,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Action",
+      "Drama"
+    ],
+    "rating": 7,
+    "director": "Ali Abbas Zafar",
+    "cast": [
+      "Salman Khan",
+      "Anushka Sharma",
+      "Randeep Hooda"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "action",
+      "drama"
+    ]
+  },
+  {
+    "id": 47,
+    "title": "Chak De! India",
+    "description": "A former hockey player coaches a women's team while trying to overcome his own troubled past.",
+    "detailedDescription": "A former hockey player gets an opportunity to rebuild his reputation by coaching a women's national team. Facing skepticism and internal divisions, he works to turn a group of individuals into a united team through discipline, trust, and determination.",
+    "poster": "https://image.tmdb.org/t/p/w500/mmFMgEsTRCAGAtwffGpuo3mJsxN.jpg",
+    "backdrop": "assets/images/movies/chak-de-india-backdrop.jpg",
+    "year": 2007,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama",
+      "Sport"
+    ],
+    "rating": 8.1,
+    "director": "Shimit Amin",
+    "cast": [
+      "Shah Rukh Khan",
+      "Vidya Malvade",
+      "Sagarika Ghatge"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama",
+      "sport"
+    ]
+  },
+  {
+    "id": 48,
+    "title": "Mary Kom",
+    "description": "A determined boxer fights against personal and social obstacles to pursue a championship career.",
+    "detailedDescription": "A determined young boxer refuses to let personal circumstances and social expectations stop her from pursuing a championship career. Her journey demands discipline, resilience, sacrifice, and the ability to keep fighting through setbacks.",
+    "poster": "https://image.tmdb.org/t/p/w500/eI1rxHzxO2sWeeBMvr42buetYnd.jpg",
+    "backdrop": "assets/images/movies/mary-kom-backdrop.jpg",
+    "year": 2014,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama",
+      "Sport"
+    ],
+    "rating": 6.8,
+    "director": "Omung Kumar",
+    "cast": [
+      "Priyanka Chopra",
+      "Darshan Kumar",
+      "Sunil Thapa"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama",
+      "sport"
+    ]
+  },
+  {
+    "id": 49,
+    "title": "Bhaag Milkha Bhaag",
+    "description": "An athlete overcomes a painful past and extraordinary obstacles to become a champion runner.",
+    "detailedDescription": "An athlete carrying the weight of a painful past discovers purpose through running. His journey from hardship to elite competition is shaped by discipline, perseverance, sacrifice, and an unwavering desire to prove what he is capable of achieving.",
+    "poster": "https://image.tmdb.org/t/p/w500/bXywc0CEzS1fIshPWWi4V8A58U3.jpg",
+    "backdrop": "assets/images/movies/bhaag-milkha-bhaag-backdrop.jpg",
+    "year": 2013,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama",
+      "Sport"
+    ],
+    "rating": 8.2,
+    "director": "Rakeysh Omprakash Mehra",
+    "cast": [
+      "Farhan Akhtar",
+      "Sonam Kapoor",
+      "Pawan Malhotra"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama",
+      "sport"
+    ]
+  },
+  {
+    "id": 50,
+    "title": "MS Dhoni: The Untold Story",
+    "description": "A young man from a small town works through setbacks and uncertainty to pursue professional cricket.",
+    "detailedDescription": "A young man from a small town follows his passion for cricket despite uncertainty and the pressure to choose a more conventional career. Through persistence and hard work, he gradually moves toward professional cricket while facing the sacrifices required to pursue a dream.",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWGPvnvL-wKQuSm_viXp9MZREcoDHTpolbbyP9cvZ-prXfRJZKp3G4kpaGVrOIr6YmVQjZ&s=10",
+    "backdrop": "assets/images/movies/ms-dhoni-the-untold-story-backdrop.jpg",
+    "year": 2016,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama",
+      "Sport"
+    ],
+    "rating": 7.9,
+    "director": "Neeraj Pandey",
+    "cast": [
+      "Sushant Singh Rajput",
+      "Kiara Advani",
+      "Disha Patani"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama",
+      "sport"
+    ]
+  },
+  {
+    "id": 51,
+    "title": "Pushpa: The Rise",
+    "description": "Pushpa: The Rise follows a determined laborer whose ambition takes him deep into a dangerous world of power and rivalry.",
+    "detailedDescription": "A determined laborer rises through a dangerous smuggling network, refusing to remain beneath those who once looked down on him. His ambition, confidence, and willingness to challenge powerful rivals gradually draw him into an increasingly violent struggle for control.",
+    "poster": "https://image.tmdb.org/t/p/w500/4DpNRjV7ITZ1GzCvrvCk86th0w.jpg",
+    "backdrop": "assets/images/movies/pushpa-the-rise-backdrop.jpg",
+    "year": 2021,
+    "runtime": 120,
+    "languages": [
+      "Telugu",
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Action",
+      "Drama"
+    ],
+    "rating": 7.6,
+    "director": "Sukumar",
+    "cast": [
+      "Allu Arjun",
+      "Rashmika Mandanna",
+      "Fahadh Faasil"
+    ],
+    "status": [
+      "popular",
+      "latest"
+    ],
+    "rank": null,
+    "keywords": [
+      "action",
+      "drama"
+    ]
+  },
+  {
+    "id": 52,
+    "title": "Pushpa 2: The Rule",
+    "description": "Pushpa 2: The Rule continues the struggle for power as Pushpa faces new enemies and challenges.",
+    "detailedDescription": "Pushpa's rise to power brings him into direct conflict with new enemies who are determined to stop his growing influence. As pressure builds from every direction, he must defend his position while dealing with shifting alliances, rivalry, ambition, and the consequences of his earlier choices.",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQrfkLIRnvKfX8t3QjJJSC-6zktsZBo5P2mE1mVJ0sHA&s=10",
+    "backdrop": "assets/images/movies/pushpa-2-the-rule-backdrop.jpg",
+    "year": 2024,
+    "runtime": 120,
+    "languages": [
+      "Telugu",
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Action",
+      "Drama"
+    ],
+    "rating": 6.8,
+    "director": "Sukumar",
+    "cast": [
+      "Allu Arjun",
+      "Rashmika Mandanna",
+      "Fahadh Faasil"
+    ],
+    "status": [
+      "latest"
+    ],
+    "rank": null,
+    "keywords": [
+      "action",
+      "drama"
+    ]
+  },
+  {
+    "id": 53,
+    "title": "Kalki 2898 AD",
+    "description": "A futuristic Indian epic that combines mythology, technology, and a battle for humanity's future.",
+    "detailedDescription": "Set in a distant future, the story combines ancient mythology with advanced technology as humanity struggles through a world transformed by conflict and environmental collapse. Different characters are drawn together by a larger destiny involving survival, hope, and the future of civilization.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZTU0MzFmNjAtYjk1YS00N2JlLThjMjYtZjM4ZDY4NTBlNDM5XkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "assets/images/movies/kalki-2898-ad-backdrop.jpg",
+    "year": 2024,
+    "runtime": 120,
+    "languages": [
+      "Telugu",
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "rating": 8,
+    "director": "Nag Ashwin",
+    "cast": [
+      "Prabhas",
+      "Deepika Padukone",
+      "Amitabh Bachchan"
+    ],
+    "status": [
+      "popular",
+      "latest"
+    ],
+    "rank": null,
+    "keywords": [
+      "action",
+      "sci-fi"
+    ]
+  },
+  {
+    "id": 54,
+    "title": "Salaar: Part 1 – Ceasefire",
+    "description": "A powerful friendship is tested by violence, loyalty, and a brutal struggle for control.",
+    "detailedDescription": "Two powerful friends are pulled into a violent conflict where loyalty and political ambition collide. As rival forces compete for control, their friendship becomes increasingly important while they face betrayal, bloodshed, and difficult choices.",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaTJjmB9wo4ju_gRUoJNFPoQf-Cp9TzpSfrDJxzJ1p2-6v2Rmxm37bjM0zsB8Dzb7kkkBs&s=10",
+    "backdrop": "assets/images/movies/salaar-part-1-ceasefire-backdrop.jpg",
+    "year": 2023,
+    "runtime": 120,
+    "languages": [
+      "Telugu",
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Action",
+      "Thriller"
+    ],
+    "rating": 6.5,
+    "director": "Prashanth Neel",
+    "cast": [
+      "Prabhas",
+      "Prithviraj Sukumaran",
+      "Shruti Haasan"
+    ],
+    "status": [
+      "latest"
+    ],
+    "rank": null,
+    "keywords": [
+      "action",
+      "thriller"
+    ]
+  },
+  {
+    "id": 55,
+    "title": "Soorarai Pottru",
+    "description": "An ambitious man fights against powerful obstacles to make affordable air travel possible.",
+    "detailedDescription": "An ambitious man dreams of making air travel accessible to ordinary people, but powerful businesses and financial barriers stand in his way. Refusing to give up, he repeatedly challenges the system and risks everything to turn an unlikely dream into reality.",
+    "poster": "https://image.tmdb.org/t/p/w500/5uimlxPCgAei8JfQUDFEUQLoyyh.jpg",
+    "backdrop": "assets/images/movies/soorarai-pottru-backdrop.jpg",
+    "year": 2020,
+    "runtime": 120,
+    "languages": [
+      "Tamil"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 8.6,
+    "director": "Sudha Kongara",
+    "cast": [
+      "Suriya",
+      "Aparna Balamurali",
+      "Paresh Rawal"
+    ],
+    "status": [
+      "popular",
+      "latest"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 56,
+    "title": "Super Deluxe",
+    "description": "Several interconnected stories collide as ordinary people face extraordinary situations and difficult choices.",
+    "detailedDescription": "Several seemingly unrelated characters find their lives unexpectedly connected through a series of unusual events. Their stories explore desire, family, morality, identity, and the unpredictable consequences that can follow from seemingly ordinary decisions.",
+    "poster": "https://image.tmdb.org/t/p/w500/rTsYDdFWyw87CTk4YgJO6nYmVcJ.jpg",
+    "backdrop": "assets/images/movies/super-deluxe-backdrop.jpg",
+    "year": 2019,
+    "runtime": 120,
+    "languages": [
+      "Tamil"
+    ],
+    "country": "India",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "rating": 8.2,
+    "director": "Thiagarajan Kumararaja",
+    "cast": [
+      "Vijay Sethupathi",
+      "Fahadh Faasil",
+      "Ramya Krishnan"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "crime",
+      "drama"
+    ]
+  },
+  {
+    "id": 57,
+    "title": "Premam",
+    "description": "A young man's journey through love, heartbreak, friendship, and different stages of life.",
+    "detailedDescription": "A young man's life unfolds through several stages of love, heartbreak, friendship, and personal growth. Each relationship teaches him something different as he gradually matures and develops a deeper understanding of himself and the people around him.",
+    "poster": "https://image.tmdb.org/t/p/w500/wfMgsfDrtouYOM6MbrkHtU96Xij.jpg",
+    "backdrop": "assets/images/movies/premam-backdrop.jpg",
+    "year": 2015,
+    "runtime": 120,
+    "languages": [
+      "Malayalam"
+    ],
+    "country": "India",
+    "genre": [
+      "Romance",
+      "Drama"
+    ],
+    "rating": 8.3,
+    "director": "Alphonse Puthren",
+    "cast": [
+      "Nivin Pauly",
+      "Sai Pallavi",
+      "Madonna Sebastian"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "romance",
+      "drama"
+    ]
+  },
+  {
+    "id": 58,
+    "title": "Charlie",
+    "description": "A free-spirited woman begins an adventurous journey while searching for a mysterious artist.",
+    "detailedDescription": "A curious and adventurous woman becomes fascinated by the traces left behind by a mysterious artist. Her search takes her through new places and encounters, gradually turning into a journey of discovery, freedom, connection, and unexpected relationships.",
+    "poster": "https://image.tmdb.org/t/p/w500/kQo30LL8punEsJu5kMZzJydQYJo.jpg",
+    "backdrop": "assets/images/movies/charlie-backdrop.jpg",
+    "year": 2015,
+    "runtime": 120,
+    "languages": [
+      "Malayalam"
+    ],
+    "country": "India",
+    "genre": [
+      "Romance",
+      "Drama"
+    ],
+    "rating": 8,
+    "director": "Martin Prakkat",
+    "cast": [
+      "Dulquer Salmaan",
+      "Parvathy Thiruvothu",
+      "Aparna Gopinath"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "romance",
+      "drama"
+    ]
+  },
+  {
+    "id": 59,
+    "title": "Aavesham",
+    "description": "Three college students become involved with a charismatic gangster whose friendship comes with unexpected consequences.",
+    "detailedDescription": "Three college students looking for excitement become closely connected with a charismatic gangster. What begins as an unusual friendship gradually pulls them deeper into his unpredictable world, creating a mixture of humor, violence, loyalty, and unexpected consequences.",
+    "poster": "https://image.tmdb.org/t/p/w500/k5RWPaNjgRcNvGoawYaQHQwyctI.jpg",
+    "backdrop": "assets/images/movies/aavesham-backdrop.jpg",
+    "year": 2024,
+    "runtime": 120,
+    "languages": [
+      "Malayalam"
+    ],
+    "country": "India",
+    "genre": [
+      "Action",
+      "Comedy"
+    ],
+    "rating": 7.8,
+    "director": "Jithu Madhavan",
+    "cast": [
+      "Fahadh Faasil",
+      "Sajin Gopu",
+      "Hipzster"
+    ],
+    "status": [
+      "popular",
+      "latest"
+    ],
+    "rank": null,
+    "keywords": [
+      "action",
+      "comedy"
+    ]
+  },
+  {
+    "id": 60,
+    "title": "777 Charlie",
+    "description": "A lonely man's life changes when an energetic dog enters his world and leads him on an emotional journey.",
+    "detailedDescription": "A lonely man living an isolated and repetitive life unexpectedly forms a bond with an energetic dog. Their relationship gradually transforms his outlook and leads them on an emotional journey filled with companionship, healing, adventure, and personal change.",
+    "poster": "https://image.tmdb.org/t/p/w500/qArPmXH0aWsT3SEtYl8XrU2Oz48.jpg",
+    "backdrop": "assets/images/movies/777-charlie-backdrop.jpg",
+    "year": 2022,
+    "runtime": 120,
+    "languages": [
+      "Kannada"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 8,
+    "director": "Kiranraj K",
+    "cast": [
+      "Rakshit Shetty",
+      "Sangeetha Sringeri",
+      "Raj B. Shetty"
+    ],
+    "status": [
+      "popular",
+      "latest"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 61,
+    "title": "Dia",
+    "description": "A young woman experiences love, loss, and unexpected turns that change her understanding of relationships.",
+    "detailedDescription": "A young woman experiences the excitement of love before unexpected circumstances completely change the direction of her life. As she deals with loss and uncertainty, she must reconsider what she believes about relationships, hope, and moving forward.",
+    "poster": "https://image.tmdb.org/t/p/w500/n038AswpNaZgIWfMEr5cxVAqcsB.jpg",
+    "backdrop": "assets/images/movies/dia-backdrop.jpg",
+    "year": 2020,
+    "runtime": 120,
+    "languages": [
+      "Kannada"
+    ],
+    "country": "India",
+    "genre": [
+      "Romance",
+      "Drama"
+    ],
+    "rating": 8,
+    "director": "K. S. Ashoka",
+    "cast": [
+      "Pruthvi Amber",
+      "Deekshith Shetty",
+      "Kushee Ravi"
+    ],
+    "status": [
+      "popular",
+      "latest"
+    ],
+    "rank": null,
+    "keywords": [
+      "romance",
+      "drama"
+    ]
+  },
+  {
+    "id": 62,
+    "title": "Fandry",
+    "description": "A young boy dreams of love and a better life while confronting social prejudice in his village.",
+    "detailedDescription": "A young boy dreams of love and a different future while growing up in a village shaped by rigid social divisions. His hopes collide with prejudice and humiliation, forcing him to confront the painful boundaries imposed by the society around him.",
+    "poster": "https://image.tmdb.org/t/p/w500/zCeFTfyKDITgfYFg2gEyzubhOD9.jpg",
+    "backdrop": "assets/images/movies/fandry-backdrop.jpg",
+    "year": 2013,
+    "runtime": 120,
+    "languages": [
+      "Marathi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 8.1,
+    "director": "Nagraj Manjule",
+    "cast": [
+      "Somnath Awghade",
+      "Rajeshwari Kharat",
+      "Suraj Pawar"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 63,
+    "title": "Killa",
+    "description": "A young boy adjusts to a new school and unfamiliar surroundings after moving to a different town.",
+    "detailedDescription": "After moving to a new town, a young boy struggles to adapt to a different school, unfamiliar surroundings, and the absence of the life he previously knew. Gradually, friendships and new experiences help him understand change and find his place in his new environment.",
+    "poster": "https://image.tmdb.org/t/p/w500/9iVHqmYP2h8d4gDPW3r6bUjJEDS.jpg",
+    "backdrop": "assets/images/movies/killa-backdrop.jpg",
+    "year": 2014,
+    "runtime": 120,
+    "languages": [
+      "Marathi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 7.8,
+    "director": "Avinash Arun",
+    "cast": [
+      "Archit Deodhar",
+      "Parth Bhalerao",
+      "Gaurish Nimkar"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 64,
+    "title": "Aamis",
+    "description": "An unconventional relationship develops between two people through their shared love of food.",
+    "detailedDescription": "Two people from different backgrounds develop an unusual emotional connection through their shared appreciation of food. Their growing relationship challenges social expectations and gradually becomes a complicated exploration of desire, intimacy, and personal freedom.",
+    "poster": "https://image.tmdb.org/t/p/w500/aBD6Jhze6kS36wBLVYkp7EGEBxr.jpg",
+    "backdrop": "assets/images/movies/aamis-backdrop.jpg",
+    "year": 2019,
+    "runtime": 120,
+    "languages": [
+      "Assamese"
+    ],
+    "country": "India",
+    "genre": [
+      "Romance",
+      "Drama"
+    ],
+    "rating": 8,
+    "director": "Bhaskar Hazarika",
+    "cast": [
+      "Lima Das",
+      "Arghadeep Barua",
+      "Neetali Das"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "romance",
+      "drama"
+    ]
+  },
+  {
+    "id": 65,
+    "title": "The Great Indian Kitchen",
+    "description": "A newly married woman struggles against deeply rooted expectations and unequal domestic responsibilities.",
+    "detailedDescription": "A newly married woman enters a household governed by deeply established traditions and expectations. As she takes on unequal domestic responsibilities, the experience gradually forces her to question the roles imposed on her and decide how much of her independence she is willing to surrender.",
+    "poster": "https://image.tmdb.org/t/p/w500/4jgiaVOGD8sTjWlwBdx8q5JMJM3.jpg",
+    "backdrop": "assets/images/movies/the-great-indian-kitchen-backdrop.jpg",
+    "year": 2021,
+    "runtime": 120,
+    "languages": [
+      "Malayalam"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 8.1,
+    "director": "Jeo Baby",
+    "cast": [
+      "Nimisha Sajayan",
+      "Suraj Venjaramoodu",
+      "Ajitha V. M."
+    ],
+    "status": [
+      "popular",
+      "latest"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 66,
+    "title": "Joji",
+    "description": "A troubled young man plots against his wealthy family while hiding his growing ambitions.",
+    "detailedDescription": "A troubled young man living under the authority of his wealthy family becomes increasingly consumed by ambition and resentment. As he begins making plans to change his circumstances, his decisions set off a dark chain of events involving deception, greed, and betrayal.",
+    "poster": "https://image.tmdb.org/t/p/w500/iXAUPTb8XNSf5B4zyUAEajz2vFu.jpg",
+    "backdrop": "assets/images/movies/joji-backdrop.jpg",
+    "year": 2021,
+    "runtime": 120,
+    "languages": [
+      "Malayalam"
+    ],
+    "country": "India",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "rating": 7.8,
+    "director": "Dileesh Pothan",
+    "cast": [
+      "Fahadh Faasil",
+      "Baburaj",
+      "P. N. Sunny"
+    ],
+    "status": [
+      "latest"
+    ],
+    "rank": null,
+    "keywords": [
+      "crime",
+      "drama"
+    ]
+  },
+  {
+    "id": 67,
+    "title": "Kumbalangi Nights",
+    "description": "Four brothers living together confront family tensions, love, and their own personal struggles.",
+    "detailedDescription": "Four brothers with very different personalities live together while struggling with unresolved family tensions and their own insecurities. New relationships and conflicts gradually force them to confront their weaknesses and discover a stronger sense of family and belonging.",
+    "poster": "https://image.tmdb.org/t/p/w500/lJ3RvIirE2C7gdBKvPRaoQ3iCo2.jpg",
+    "backdrop": "assets/images/movies/kumbalangi-nights-backdrop.jpg",
+    "year": 2019,
+    "runtime": 120,
+    "languages": [
+      "Malayalam"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "rating": 8.5,
+    "director": "Madhu C. Narayanan",
+    "cast": [
+      "Shane Nigam",
+      "Soubin Shahir",
+      "Fahadh Faasil"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama",
+      "romance"
+    ]
+  },
+  {
+    "id": 68,
+    "title": "Super 30",
+    "description": "A mathematics teacher creates an educational program that gives disadvantaged students a chance to succeed.",
+    "detailedDescription": "A dedicated mathematics teacher creates an educational program designed to give talented students from disadvantaged backgrounds an opportunity to succeed. Despite financial difficulties and opposition, he works tirelessly to prepare them for a life-changing examination.",
+    "poster": "https://image.tmdb.org/t/p/w500/n0LdZvEqZjnSQSHzzwryFBYjXk1.jpg",
+    "backdrop": "assets/images/movies/super-30-backdrop.jpg",
+    "year": 2019,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 7.8,
+    "director": "Vikas Bahl",
+    "cast": [
+      "Hrithik Roshan",
+      "Mrunal Thakur",
+      "Pankaj Tripathi"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 69,
+    "title": "Raazi",
+    "description": "A young Indian woman is recruited as a spy and sent into Pakistan during a period of political tension.",
+    "detailedDescription": "A young woman agrees to become an undercover agent and enters a dangerous world of espionage during a period of political tension. Living among people who do not know her true identity, she must balance her mission with fear, relationships, loyalty, and survival.",
+    "poster": "https://image.tmdb.org/t/p/w500/l9VJoRj0CYBURsnetvazq73FOfz.jpg",
+    "backdrop": "assets/images/movies/raazi-backdrop.jpg",
+    "year": 2018,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Action",
+      "Drama"
+    ],
+    "rating": 7.7,
+    "director": "Meghna Gulzar",
+    "cast": [
+      "Alia Bhatt",
+      "Vicky Kaushal",
+      "Jaideep Ahlawat"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "action",
+      "drama"
+    ]
+  },
+  {
+    "id": 70,
+    "title": "Pink",
+    "description": "Three women confront a legal battle that challenges assumptions about consent, freedom, and justice.",
+    "detailedDescription": "Three women find themselves facing serious consequences after an encounter is misunderstood and manipulated against them. A legal battle follows, forcing the characters and society around them to confront assumptions about consent, freedom, reputation, and justice.",
+    "poster": "https://image.tmdb.org/t/p/w500/6xNhnyKm2M5FEOY7xv5iKiQ5P3.jpg",
+    "backdrop": "assets/images/movies/pink-backdrop.jpg",
+    "year": 2016,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "rating": 8.1,
+    "director": "Aniruddha Roy Chowdhury",
+    "cast": [
+      "Amitabh Bachchan",
+      "Taapsee Pannu",
+      "Kirti Kulhari"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "crime",
+      "drama"
+    ]
+  },
+  {
+    "id": 71,
+    "title": "Neerja",
+    "description": "A courageous flight attendant risks her life to protect passengers during a hijacking.",
+    "detailedDescription": "A courageous flight attendant finds herself responsible for protecting passengers during a terrifying hijacking. Faced with extraordinary danger, she uses her intelligence and bravery to help others while putting her own safety at risk.",
+    "poster": "https://image.tmdb.org/t/p/w500/alDRJWHI1TfqB9ev6cMbVE5P92x.jpg",
+    "backdrop": "assets/images/movies/neerja-backdrop.jpg",
+    "year": 2016,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama",
+      "Thriller"
+    ],
+    "rating": 7.6,
+    "director": "Ram Madhvani",
+    "cast": [
+      "Sonam Kapoor",
+      "Shabana Azmi",
+      "Yogendra Tiku"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama",
+      "thriller"
+    ]
+  },
+  {
+    "id": 72,
+    "title": "Shershaah",
+    "description": "A soldier's journey is told through his dedication, courage, relationships, and sacrifice.",
+    "detailedDescription": "The story follows a soldier whose dedication to his country develops alongside his personal relationships and ambitions. As his military career becomes increasingly demanding, courage, duty, friendship, love, and sacrifice shape his journey.",
+    "poster": "https://image.tmdb.org/t/p/w500/zGvFnwoXJKrYnKhoVPytqkqCJ8V.jpg",
+    "backdrop": "assets/images/movies/shershaah-backdrop.jpg",
+    "year": 2021,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Action",
+      "Drama"
+    ],
+    "rating": 8.3,
+    "director": "Vishnuvardhan",
+    "cast": [
+      "Sidharth Malhotra",
+      "Kiara Advani",
+      "Shiv Panditt"
+    ],
+    "status": [
+      "popular",
+      "latest"
+    ],
+    "rank": null,
+    "keywords": [
+      "action",
+      "drama"
+    ]
+  },
+  {
+    "id": 73,
+    "title": "Bhaag Milkha Bhaag",
+    "description": "An athlete overcomes personal tragedy and immense challenges to become a celebrated runner.",
+    "detailedDescription": "An athlete carrying the pain of his past discovers a new purpose through running. His journey from hardship to international competition requires extraordinary discipline and sacrifice as he works to overcome personal trauma and prove his abilities.",
+    "poster": "https://image.tmdb.org/t/p/w500/bXywc0CEzS1fIshPWWi4V8A58U3.jpg",
+    "backdrop": "assets/images/movies/bhaag-milkha-bhaag-backdrop.jpg",
+    "year": 2013,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 8.2,
+    "director": "Rakeysh Omprakash Mehra",
+    "cast": [
+      "Farhan Akhtar",
+      "Sonam Kapoor",
+      "Divya Dutta"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 74,
+    "title": "Queen",
+    "description": "A young woman takes a solo honeymoon trip and discovers confidence, independence, and herself.",
+    "detailedDescription": "After her planned marriage unexpectedly falls apart, a young woman decides to take her honeymoon trip alone. What begins as an unfamiliar experience becomes a journey of independence, friendship, confidence, and discovering what she wants from life.",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ler_xlD5MtYBjcbN7XFSb-18OivV8Tkj1uJzJxvIAw&s=10",
+    "backdrop": "assets/images/movies/queen-backdrop.jpg",
+    "year": 2013,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "rating": 8.1,
+    "director": "Vikas Bahl",
+    "cast": [
+      "Kangana Ranaut",
+      "Rajkummar Rao",
+      "Lisa Haydon"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "drama"
+    ]
+  },
+  {
+    "id": 75,
+    "title": "Barfi!",
+    "description": "A charming young man forms deep relationships despite being unable to hear or speak.",
+    "detailedDescription": "A cheerful young man who cannot hear or speak forms meaningful relationships with people who see the world differently from him. Through friendship, love, misunderstanding, and difficult circumstances, the characters discover the depth of genuine emotional connection.",
+    "poster": "https://image.tmdb.org/t/p/w500/5cJIx2zKjDoUtPSliou23xsReb1.jpg",
+    "backdrop": "assets/images/movies/barfi-backdrop.jpg",
+    "year": 2012,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "rating": 8.1,
+    "director": "Anurag Basu",
+    "cast": [
+      "Ranbir Kapoor",
+      "Priyanka Chopra",
+      "Ileana D'Cruz"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "drama",
+      "romance"
+    ]
+  },
+  {
+    "id": 76,
+    "title": "Zindagi Na Milegi Dobara",
+    "description": "Three friends take a road trip that changes their relationships and perspectives on life.",
+    "detailedDescription": "Three friends embark on a road trip that they have planned for years, expecting adventure but encountering much more than they anticipated. As they confront fears and unresolved emotions, the journey changes their understanding of friendship, love, ambition, and life.",
+    "poster": "https://image.tmdb.org/t/p/w500/hKO9O715wYxjkQSEv47giCYcyO8.jpg",
+    "backdrop": "assets/images/movies/zindagi-na-milegi-dobara-backdrop.jpg",
+    "year": 2011,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "rating": 8.2,
+    "director": "Zoya Akhtar",
+    "cast": [
+      "Hrithik Roshan",
+      "Farhan Akhtar",
+      "Abhay Deol"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "drama"
+    ]
+  },
+  {
+    "id": 77,
+    "title": "Rockstar",
+    "description": "A talented musician discovers that heartbreak and personal struggle shape his artistic journey.",
+    "detailedDescription": "An aspiring musician discovers that his deepest emotions and personal struggles influence the music he creates. As success grows, so do the complications surrounding love, ambition, identity, and the emotional cost of becoming the artist he wants to be.",
+    "poster": "https://image.tmdb.org/t/p/w500/cJZC9riwrdATBUonkZJZD6y9g40.jpg",
+    "backdrop": "assets/images/movies/rockstar-backdrop.jpg",
+    "year": 2011,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "rating": 7.7,
+    "director": "Imtiaz Ali",
+    "cast": [
+      "Ranbir Kapoor",
+      "Nargis Fakhri",
+      "Shammi Kapoor"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama",
+      "romance"
+    ]
+  },
+  {
+    "id": 78,
+    "title": "Omkara",
+    "description": "A political leader's inner circle descends into jealousy, betrayal, and violent rivalry.",
+    "detailedDescription": "A powerful political leader's inner circle begins to collapse when jealousy and suspicion take hold. Personal ambition and betrayal turn close relationships into dangerous rivalries, creating a tense story about power, loyalty, manipulation, and revenge.",
+    "poster": "https://image.tmdb.org/t/p/w500/nV8r5BA1lD3aa7WsHJ56uwxLfSN.jpg",
+    "backdrop": "assets/images/movies/omkara-backdrop.jpg",
+    "year": 2006,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "rating": 8.1,
+    "director": "Vishal Bhardwaj",
+    "cast": [
+      "Ajay Devgn",
+      "Saif Ali Khan",
+      "Kareena Kapoor"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "crime",
+      "drama"
+    ]
+  },
+  {
+    "id": 79,
+    "title": "Black",
+    "description": "A teacher helps a deaf-blind girl communicate and discover her potential against overwhelming challenges.",
+    "detailedDescription": "A dedicated teacher takes on the difficult task of helping a deaf-blind girl communicate and understand the world around her. Their relationship develops through patience, discipline, frustration, and determination as they work together to overcome extraordinary challenges.",
+    "poster": "https://image.tmdb.org/t/p/w500/cFICDU9erHYmlAyCZzbb1adNMgh.jpg",
+    "backdrop": "assets/images/movies/black-backdrop.jpg",
+    "year": 2005,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 8.1,
+    "director": "Sanjay Leela Bhansali",
+    "cast": [
+      "Amitabh Bachchan",
+      "Rani Mukerji",
+      "Shernaz Patel"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 80,
+    "title": "Devdas",
+    "description": "A tragic love story unfolds as a man struggles with lost love, family expectations, and self-destruction.",
+    "detailedDescription": "A deeply emotional man is separated from the woman he loves because of family expectations and social circumstances. Unable to cope with the loss, he spirals into self-destructive behavior while the people around him struggle with the consequences of his choices.",
+    "poster": "https://image.tmdb.org/t/p/w500/dUBFi7bnLRfm4WaTh4ZoF2tbBJj.jpg",
+    "backdrop": "assets/images/movies/devdas-backdrop.jpg",
+    "year": 2002,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "rating": 7.5,
+    "director": "Sanjay Leela Bhansali",
+    "cast": [
+      "Shah Rukh Khan",
+      "Aishwarya Rai Bachchan",
+      "Madhuri Dixit"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama",
+      "romance"
+    ]
+  },
+  {
+    "id": 81,
+    "title": "Koi... Mil Gaya",
+    "description": "A young man with developmental challenges develops an extraordinary connection with an alien visitor.",
+    "detailedDescription": "A young man who has struggled to fit into society discovers an extraordinary connection with an alien visitor. Their friendship changes his life and gives him new confidence while drawing the attention of people who want to understand the mysterious visitor.",
+    "poster": "https://image.tmdb.org/t/p/w500/2iJVauDYcYxRRGciTmAOSjiATf9.jpg",
+    "backdrop": "assets/images/movies/koi-mil-gaya-backdrop.jpg",
+    "year": 2003,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Sci-Fi",
+      "Drama"
+    ],
+    "rating": 7.1,
+    "director": "Rakesh Roshan",
+    "cast": [
+      "Hrithik Roshan",
+      "Preity Zinta",
+      "Rekha"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "sci-fi",
+      "drama"
+    ]
+  },
+  {
+    "id": 82,
+    "title": "Company",
+    "description": "Two men build a criminal organization whose growing power eventually drives them into conflict.",
+    "detailedDescription": "Two ambitious men work together to build a powerful criminal organization, but their partnership begins to fracture as their influence and ambitions grow. Loyalty gives way to suspicion, creating an escalating conflict within the organization they built together.",
+    "poster": "https://image.tmdb.org/t/p/w500/1A2J7bYryOmBVBU8qpTs3fta0hv.jpg",
+    "backdrop": "assets/images/movies/company-backdrop.jpg",
+    "year": 2002,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "rating": 8,
+    "director": "Ram Gopal Varma",
+    "cast": [
+      "Ajay Devgn",
+      "Vivek Oberoi",
+      "Manisha Koirala"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "crime",
+      "drama"
+    ]
+  },
+  {
+    "id": 83,
+    "title": "Satya",
+    "description": "A mysterious newcomer becomes involved with Mumbai's criminal underworld and its dangerous power struggles.",
+    "detailedDescription": "A mysterious newcomer enters Mumbai's criminal underworld and gradually becomes deeply involved in its violent power struggles. As his position grows, relationships and loyalty become increasingly difficult to separate from survival and ambition.",
+    "poster": "https://image.tmdb.org/t/p/w500/wwgpEEGU5RVu5hM7AZa6oiivcln.jpg",
+    "backdrop": "assets/images/movies/satya-backdrop.jpg",
+    "year": 1998,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "rating": 8.2,
+    "director": "Ram Gopal Varma",
+    "cast": [
+      "Manoj Bajpayee",
+      "Urmila Matondkar",
+      "J. D. Chakravarthy"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "crime",
+      "drama"
+    ]
+  },
+  {
+    "id": 84,
+    "title": "Dil Se..",
+    "description": "A journalist becomes obsessed with a mysterious woman while caught between love and political conflict.",
+    "detailedDescription": "A journalist becomes fascinated by a mysterious woman he encounters while traveling for work. His growing obsession develops into a complicated relationship shaped by political unrest, emotional conflict, and circumstances that neither of them can easily escape.",
+    "poster": "https://image.tmdb.org/t/p/w500/rdnkOPYlHf8WaPRllTz3dsuzpp8.jpg",
+    "backdrop": "assets/images/movies/dil-se-backdrop.jpg",
+    "year": 1998,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Romance",
+      "Drama"
+    ],
+    "rating": 7.5,
+    "director": "Mani Ratnam",
+    "cast": [
+      "Shah Rukh Khan",
+      "Manisha Koirala",
+      "Preity Zinta"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "romance",
+      "drama"
+    ]
+  },
+  {
+    "id": 85,
+    "title": "Hum Aapke Hain Koun..!",
+    "description": "A family-centered romance explores love, tradition, relationships, and the expectations of marriage.",
+    "detailedDescription": "A romance develops within two closely connected families whose lives are shaped by tradition and celebration. As relationships deepen, the characters face emotional choices involving love, family responsibility, marriage, and the expectations placed upon them.",
+    "poster": "https://image.tmdb.org/t/p/w500/v5CutZgZgai1if2U2CPssiig7VW.jpg",
+    "backdrop": "assets/images/movies/hum-aapke-hain-koun-backdrop.jpg",
+    "year": 1994,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Romance",
+      "Drama"
+    ],
+    "rating": 7.5,
+    "director": "Sooraj Barjatya",
+    "cast": [
+      "Salman Khan",
+      "Madhuri Dixit",
+      "Mohnish Bahl"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "romance",
+      "drama"
+    ]
+  },
+  {
+    "id": 86,
+    "title": "Bombay",
+    "description": "A couple from different religious backgrounds faces family conflict and social unrest after falling in love.",
+    "detailedDescription": "A young couple from different religious backgrounds chooses to build a life together despite opposition from their families. Their relationship is tested when wider social tensions and violence enter their lives, forcing them to fight to protect their family and their bond.",
+    "poster": "https://image.tmdb.org/t/p/w500/g1FXpdQogl84eztCsLI3h8Kmp69.jpg",
+    "backdrop": "assets/images/movies/bombay-backdrop.jpg",
+    "year": 1995,
+    "runtime": 120,
+    "languages": [
+      "Tamil",
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Romance",
+      "Drama"
+    ],
+    "rating": 8.1,
+    "director": "Mani Ratnam",
+    "cast": [
+      "Arvind Swamy",
+      "Manisha Koirala",
+      "Tinnu Anand"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "romance",
+      "drama"
+    ]
+  },
+  {
+    "id": 87,
+    "title": "Dilwale Dulhania Le Jayenge",
+    "description": "Two young Indians living in Europe fall in love while navigating family traditions and expectations.",
+    "detailedDescription": "Two young Indians living in Europe meet and gradually fall in love, but their relationship must overcome strong family expectations and traditional values. Their journey becomes a balance between personal choice, romance, family approval, and cultural identity.",
+    "poster": "https://image.tmdb.org/t/p/w500/lfRkUr7DYdHldAqi3PwdQGBRBPM.jpg",
+    "backdrop": "assets/images/movies/dilwale-dulhania-le-jayenge-backdrop.jpg",
+    "year": 1995,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Romance",
+      "Comedy"
+    ],
+    "rating": 8,
+    "director": "Aditya Chopra",
+    "cast": [
+      "Shah Rukh Khan",
+      "Kajol",
+      "Amrish Puri"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "romance",
+      "comedy"
+    ]
+  },
+  {
+    "id": 88,
+    "title": "Baazigar",
+    "description": "A man driven by revenge enters a wealthy family and begins a dangerous game of deception.",
+    "detailedDescription": "Driven by a desire for revenge, a determined man deliberately enters a wealthy family and begins manipulating those around him. As his plan develops, deception, ambition, romance, and betrayal become increasingly intertwined.",
+    "poster": "https://image.tmdb.org/t/p/w500/ndQQ2bTV0JLSRxUBchE4eD3qhDb.jpg",
+    "backdrop": "assets/images/movies/baazigar-backdrop.jpg",
+    "year": 1993,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Crime",
+      "Thriller"
+    ],
+    "rating": 7.6,
+    "director": "Abbas-Mustan",
+    "cast": [
+      "Shah Rukh Khan",
+      "Kajol",
+      "Shilpa Shetty"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "crime",
+      "thriller"
+    ]
+  },
+  {
+    "id": 89,
+    "title": "Agneepath",
+    "description": "A man returns years later to avenge his father's murder and confront the criminal responsible.",
+    "detailedDescription": "After losing his father to a ruthless criminal, a young man grows up carrying the desire for revenge. Years later, he returns with a carefully formed plan to confront the man responsible and reclaim the honor that was taken from his family.",
+    "poster": "https://image.tmdb.org/t/p/w500/kKCWrcIi6pAXNvPnC1LWtV4hB8u.jpg",
+    "backdrop": "assets/images/movies/agneepath-backdrop.jpg",
+    "year": 1990,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Action",
+      "Crime"
+    ],
+    "rating": 7.7,
+    "director": "Mukul Anand",
+    "cast": [
+      "Amitabh Bachchan",
+      "Mithun Chakraborty",
+      "Madhavi"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "action",
+      "crime"
+    ]
+  },
+  {
+    "id": 90,
+    "title": "Mr. India",
+    "description": "A man discovers an invisibility device and uses it to protect children from a ruthless criminal.",
+    "detailedDescription": "A kind-hearted man discovers a device that can make him invisible and initially sees it as an extraordinary opportunity. When a ruthless criminal threatens the people around him, he chooses to use his newfound ability to protect others and fight back.",
+    "poster": "https://image.tmdb.org/t/p/w500/nqDJ8vuVFYymUhOUKcGCZoHy4tu.jpg",
+    "backdrop": "assets/images/movies/mr-india-backdrop.jpg",
+    "year": 1987,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "rating": 7.8,
+    "director": "Shekhar Kapur",
+    "cast": [
+      "Anil Kapoor",
+      "Sridevi",
+      "Amrish Puri"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "action",
+      "sci-fi"
+    ]
+  },
+  {
+    "id": 91,
+    "title": "Nayakan",
+    "description": "A young man rises through Mumbai's underworld while struggling with morality, family, and power.",
+    "detailedDescription": "A young man becomes increasingly involved in Mumbai's criminal underworld and gradually rises in power and influence. As his responsibilities grow, he must confront the consequences of violence and the difficult balance between family, morality, loyalty, and power.",
+    "poster": "https://image.tmdb.org/t/p/w500/hnCKKPG5VkUiGQV0DTniyMTEZsT.jpg",
+    "backdrop": "assets/images/movies/nayakan-backdrop.jpg",
+    "year": 1987,
+    "runtime": 120,
+    "languages": [
+      "Tamil"
+    ],
+    "country": "India",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "rating": 8.6,
+    "director": "Mani Ratnam",
+    "cast": [
+      "Kamal Haasan",
+      "Saranya Ponvannan",
+      "Karthika"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "crime",
+      "drama"
+    ]
+  },
+  {
+    "id": 92,
+    "title": "Pushpaka Vimana",
+    "description": "A silent comedy follows a poor man who accidentally discovers an opportunity to change his life.",
+    "detailedDescription": "A poor and ambitious man unexpectedly encounters an opportunity that could completely transform his life. Through a largely visual and comedic journey, his attempts to take advantage of his circumstances lead to a series of increasingly absurd situations.",
+    "poster": "https://image.tmdb.org/t/p/w500/azTpDHh87L89TtEsj77bWnV08Ew.jpg",
+    "backdrop": "assets/images/movies/pushpaka-vimana-backdrop.jpg",
+    "year": 1987,
+    "runtime": 120,
+    "languages": [
+      "Kannada"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy"
+    ],
+    "rating": 8.6,
+    "director": "Singeetam Srinivasa Rao",
+    "cast": [
+      "Kamal Haasan",
+      "Amala Akkineni",
+      "Tinnu Anand"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy"
+    ]
+  },
+  {
+    "id": 93,
+    "title": "Thevar Magan",
+    "description": "A man returning home becomes caught between his father's traditional values and his own ambitions.",
+    "detailedDescription": "A man who has built a life away from home returns to his family and finds himself caught between his father's traditional expectations and his own ambitions. As conflict grows around him, he must decide what responsibilities he is willing to accept and what kind of future he wants.",
+    "poster": "https://image.tmdb.org/t/p/w500/wL6DTw3fNDXFnWRdZyvJWpGQaeY.jpg",
+    "backdrop": "assets/images/movies/thevar-magan-backdrop.jpg",
+    "year": 1992,
+    "runtime": 120,
+    "languages": [
+      "Tamil"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama",
+      "Crime"
+    ],
+    "rating": 8.6,
+    "director": "Bharathan",
+    "cast": [
+      "Kamal Haasan",
+      "Sivaji Ganesan",
+      "Revathi"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama",
+      "crime"
+    ]
+  },
+  {
+    "id": 94,
+    "title": "Sagara Sangamam",
+    "description": "A talented classical dancer struggles with circumstances that prevent him from achieving his artistic dreams.",
+    "detailedDescription": "A gifted classical dancer dreams of achieving recognition for his art but repeatedly encounters circumstances that stand between him and his ambitions. His journey explores artistic passion, sacrifice, love, disappointment, and the enduring value of creativity.",
+    "poster": "https://image.tmdb.org/t/p/w500/hdg47CcaBfLf0DttUoav45boYtL.jpg",
+    "backdrop": "assets/images/movies/sagara-sangamam-backdrop.jpg",
+    "year": 1983,
+    "runtime": 120,
+    "languages": [
+      "Telugu"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "rating": 8.7,
+    "director": "K. Viswanath",
+    "cast": [
+      "Kamal Haasan",
+      "Jaya Prada",
+      "Sarath Babu"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama",
+      "romance"
+    ]
+  },
+  {
+    "id": 95,
+    "title": "Maya Bazaar",
+    "description": "A legendary mythological comedy brings together family, romance, magic, and elaborate deception.",
+    "detailedDescription": "A legendary mythological story brings together romance, family relationships, supernatural elements, and elaborate schemes. Multiple characters become involved in a playful chain of deception and misunderstandings that ultimately brings their separate stories together.",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCgsYFI2qXFspQeVw6X4vCZHJftyG99kAlwBTBPjRDIkGIkkgRiNYYUI9C&s=10",
+    "backdrop": "assets/images/movies/maya-bazaar-backdrop.jpg",
+    "year": 1957,
+    "runtime": 120,
+    "languages": [
+      "Telugu"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "rating": 9,
+    "director": "K. V. Reddy",
+    "cast": [
+      "N. T. Rama Rao",
+      "S. V. Ranga Rao",
+      "Savitri"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "drama"
+    ]
+  },
+  {
+    "id": 96,
+    "title": "Elippathayam",
+    "description": "A man struggles to adapt as the traditional world around him changes and his old way of life disappears.",
+    "detailedDescription": "A man remains trapped in an increasingly outdated way of life while the world around him changes. His inability to adapt creates growing tension within his family and exposes the consequences of refusing to confront social and personal change.",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxUaCTuuZn0KaMBwzGT9pW82Y-hPbpyLs3OjCPCwSqrw&s=10",
+    "backdrop": "assets/images/movies/elippathayam-backdrop.jpg",
+    "year": 1981,
+    "runtime": 120,
+    "languages": [
+      "Malayalam"
+    ],
+    "country": "India",
+    "genre": [
+      "Drama"
+    ],
+    "rating": 8.3,
+    "director": "Adoor Gopalakrishnan",
+    "cast": [
+      "Karamana Janardanan Nair",
+      "Sharada",
+      "Jalaja"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "drama"
+    ]
+  },
+  {
+    "id": 97,
+    "title": "Thithi",
+    "description": "Three generations of men react differently to the death of the family's oldest member.",
+    "detailedDescription": "After the death of the oldest member of a family, three generations of men respond to the event in very different ways. Their competing personalities, priorities, and desires create a humorous and revealing look at family relationships and human behavior.",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwFd5QJb8qZVIisyLniRyyemduaAC7cW_aoO7ouQ_hURdgHo4RgGf3ciBMtL73jSoEal86eA&s=10",
+    "backdrop": "assets/images/movies/thithi-backdrop.jpg",
+    "year": 2015,
+    "runtime": 120,
+    "languages": [
+      "Kannada"
+    ],
+    "country": "India",
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "rating": 8.1,
+    "director": "Raam Reddy",
+    "cast": [
+      "Channegowda",
+      "Thammegowda",
+      "Abhishek H. N."
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "comedy",
+      "drama"
+    ]
+  },
+  {
+    "id": 98,
+    "title": "The Lunchbox",
+    "description": "A mistaken lunch delivery creates an unexpected friendship between two lonely people in Mumbai.",
+    "detailedDescription": "A delivery mistake causes a lunchbox to reach the wrong person, beginning an unexpected exchange between two lonely individuals. Through written messages and shared experiences, their distant friendship gradually becomes an important source of comfort and emotional connection.",
+    "poster": "https://image.tmdb.org/t/p/w500/jSOiz1h97i3qwjZJXY8SeLvjPsl.jpg",
+    "backdrop": "assets/images/movies/the-lunchbox-backdrop.jpg",
+    "year": 2013,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Romance",
+      "Drama"
+    ],
+    "rating": 7.8,
+    "director": "Ritesh Batra",
+    "cast": [
+      "Irrfan Khan",
+      "Nimrat Kaur",
+      "Nawazuddin Siddiqui"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "romance",
+      "drama"
+    ]
+  },
+  {
+    "id": 99,
+    "title": "Gangs of Wasseypur",
+    "description": "A sprawling crime saga follows generations of rival families locked in a cycle of revenge and power.",
+    "detailedDescription": "A sprawling crime saga follows several generations of rival families whose conflict becomes consumed by revenge, ambition, and the desire for control. As the feud continues across decades, personal relationships become inseparable from the larger struggle for power.",
+    "poster": "https://m.media-amazon.com/images/I/81sI6FYKC7L._AC_UF894,1000_QL80_.jpg",
+    "backdrop": "assets/images/movies/gangs-of-wasseypur-backdrop.jpg",
+    "year": 2012,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "rating": 8.2,
+    "director": "Anurag Kashyap",
+    "cast": [
+      "Manoj Bajpayee",
+      "Nawazuddin Siddiqui",
+      "Richa Chadda"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "crime",
+      "drama"
+    ]
+  },
+  {
+    "id": 100,
+    "title": "Black Friday",
+    "description": "A detailed crime drama examines the investigation surrounding a series of devastating attacks.",
+    "detailedDescription": "A detailed crime drama follows the investigation surrounding a series of devastating attacks and the people connected to the events. The story focuses on the investigative process, the complexity of the case, and the different perspectives surrounding the events.",
+    "poster": "https://image.tmdb.org/t/p/w500/a5s6liMFTQd7EHvCSSjavu4piPr.jpg",
+    "backdrop": "assets/images/movies/black-friday-backdrop.jpg",
+    "year": 2004,
+    "runtime": 120,
+    "languages": [
+      "Hindi"
+    ],
+    "country": "India",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "rating": 8.4,
+    "director": "Anurag Kashyap",
+    "cast": [
+      "Kay Kay Menon",
+      "Pavan Malhotra",
+      "Aditya Srivastava"
+    ],
+    "status": [
+      "popular"
+    ],
+    "rank": null,
+    "keywords": [
+      "crime",
+      "drama"
+    ]
   }
 ];

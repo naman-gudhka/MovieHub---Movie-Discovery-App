@@ -1,6 +1,6 @@
 import { movies } from "../data/movies.js";
 import { user } from "../data/user.js";
-import { renderMovieCards, movieCardInteraction, watchlistInteraction } from "./movies.js";
+import { renderMovieCards, movieCardInteraction, watchlistInteraction, navigateToDetailsPage } from "./movies.js";
 
 const favouritesGrid = document.querySelector('.js-favorites-grid');
 const favouriteMovies = movies.filter(
@@ -14,6 +14,8 @@ if(favouriteMovies.length === 0) {
   emptyState.hidden = false;
 }else {
   emptyState.hidden = true;
+
+  navigateToDetailsPage(favouritesGrid);
 
   movieCardInteraction(favouritesGrid, (movieCard) => {
     movieCard.remove();
