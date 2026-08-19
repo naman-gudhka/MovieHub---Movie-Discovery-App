@@ -151,7 +151,7 @@ function updateWatchlistButton(movieId){
 }
 
 export function navigateToDetailsPage(movieGrid){
-  movieGrid.addEventListener('click', () => {
+  movieGrid.addEventListener('click', (event) => {
 
     const detailsButton = event.target.closest('.card-action--detail');
 

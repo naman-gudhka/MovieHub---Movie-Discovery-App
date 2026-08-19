@@ -20,7 +20,7 @@ renderMovieCards(browseMovies, movieGrid);
 
 movieCardInteraction(trendingMovieGrid);
 watchlistInteraction(trendingMovieGrid);
-navigateToDetailsPage(movieGrid);
+navigateToDetailsPage(trendingMovieGrid);
 renderMovieCards(trendingMovies, trendingMovieGrid);
 
 document.querySelector('.js-view-more-btn')
