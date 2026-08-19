@@ -53,10 +53,24 @@
               fresh picks in one elegant streaming-inspired space.
             </p>
 
-            <form class="search-box" role="search" id="movie-search-form">
-              <label class="visually-hidden" for="movie-search">Search movies</label>
-              <input id="movie-search" type="search" placeholder="Search movies..." />
-              <button type="submit">Search</button>
+            <form class="search-box" id="movie-search-form">
+
+              <input
+                id="movie-search"
+                type="search"
+                placeholder="Search movies..."
+                autocomplete="off"
+              />
+
+              <button
+                class="js-search-button"
+                type="submit"
+              >
+                Search
+              </button>
+
+              <div class="search-suggestions js-search-suggestions"></div>
+
             </form>
 
             <div class="hero-actions">
@@ -131,5 +145,7 @@
     </footer>
 
     <script src="./assets/js/main.js" type="module"></script>
+    <script type="module" src="assets/js/search.js"></script>
+    
   </body>
 </html>
