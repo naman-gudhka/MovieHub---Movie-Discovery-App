@@ -11,7 +11,7 @@ The application uses the **TMDB API** to retrieve movie information and poster i
 ## 🌐 Live Demo
 
 🔗 **Live Website:**  
-https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/
+https://naman-gudhka.github.io/MovieHub---Movie-Discovery-App/
 
 ---
 
